@@ -1,0 +1,83 @@
+#dekton_box01 {
+  padding: 150px 0 100px;
+  .m-block03 {
+    figure {
+      &::after {
+        width: 59px;
+        height: 294px;
+        background: url("/assets/images/dekton/text_dekton.png") no-repeat
+          center;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+#dekton_box03 {
+  padding: 150px 0 150px;
+  position: relative;
+  .c-title02 {
+    color: #000936;
+  }
+  .benefit__block {
+    dl {
+      &:not(:last-child) {
+        margin-bottom: 120px;
+      }
+      dt {
+        background: #fff;
+        border-radius: 10px;
+        color: #000;
+        font-size: 40px;
+        font-weight: 700;
+        position: relative;
+        cursor: pointer;
+        padding: 28px 80px 20px 40px;
+        margin-bottom: 50px;
+        &:after {
+          content: "";
+          width: 40px;
+          height: 3px;
+          background: url("/assets/images/dekton/dekton_ico01.png") no-repeat
+            center;
+          background-size: contain;
+          position: absolute;
+          top: 50%;
+          right: 40px;
+          transform: translateY(-50%);
+        }
+        &.active:after {
+          height: 40px;
+          background: url("/assets/images/dekton/dekton_ico02.png") no-repeat
+            center;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
+#dekton_box04 {
+  background: url("/assets/images/dekton/dekton_bg01.png") no-repeat  top;
+  background-size: contain;
+  padding: 230px 0 230px;
+  .c-slider01 .slick-dots li button:before {
+    border: none;
+  }
+  .c-slider01 .slick-dots li.slick-active button:before {
+    background: #0779f1;
+  }
+}
+#dekton_box05 {
+    padding: 100px 0 100px;
+  .c-title02 {
+    color: #000936;
+    margin-bottom: 50px;
+  }
+  .txt01 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+}
