@@ -38,6 +38,7 @@ $(document).ready(function () {
       {
         breakpoint: 767,
         settings: {
+          arrows:false,
           slidesToShow: 2,
         },
       },
@@ -56,12 +57,13 @@ $(document).ready(function () {
       {
         breakpoint: 767,
         settings: {
+          arrows:false,
           slidesToShow: 1,
         },
       },
     ],
   });
-  
+
   if ($('.m-blockfqa').length) {
     $('.m-blockfqa dl').each(function(index){
         $(this).find('dt').click(function(){
@@ -69,6 +71,14 @@ $(document).ready(function () {
             $('.m-blockfqa dl dd').eq(index).slideToggle();
         })
     })
+  }
+
+  if ($('.list-2cols').length) {
+    $('.list-2cols h4').matchHeight();
+  }
+  if ($('.c-slider01').length) {
+    $('.c-slider01 .sec').matchHeight();
+    $('.c-slider01 h4').matchHeight();
   }
   
 });
