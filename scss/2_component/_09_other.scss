@@ -33,6 +33,7 @@
 .illust {
   position: absolute;
   z-index: 2;
+  pointer-events: none;
   &.illust01 {
     max-width: 593px;
     top: 130px;
@@ -65,6 +66,32 @@
       width: 40vw;
     }
   }
+  &.illust05 {
+    max-width:364px;
+    top: 0;
+    left: 0;
+    mix-blend-mode: exclusion;
+    @include max(1500px) {
+      width:25vw;
+    }
+  }
+  &.illust06 {
+    max-width: 405px;
+    right: 0;
+    bottom: -7vw;
+    mix-blend-mode: exclusion;
+    @include max(1500px) {
+      width: 27vw;
+    }
+  }
 }
 
-
+.under_txt {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 35px;
+  @include max(1024px) {
+    font-size: 18px;
+  }
+}

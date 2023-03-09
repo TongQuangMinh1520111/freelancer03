@@ -1,4 +1,4 @@
-mixin mainvSlider(h2text,text,items=[])
+mixin mainvSlider(h2text,text,items=[],isIllust=true)
   .m-mainv 
     .inner
       .m-mainv__cont
@@ -9,3 +9,9 @@ mixin mainvSlider(h2text,text,items=[])
           each item,index in items
             li.items
               img(src=item.src, alt=item.alt)
+    if isIllust
+      figure.illust.illust05
+        img(src=path+"assets/images/illust05.svg", alt="illust")
+      figure.illust.illust06
+        img(src=path+"assets/images/illust06.svg", alt="illust") 
+      

@@ -132,7 +132,7 @@
           cursor: pointer;
         }
         &.sub:hover {
-          > .m-header__submenu{
+          > .m-header__submenu {
             opacity: 1;
             visibility: visible;
           }
@@ -146,11 +146,11 @@
     width: 100%;
     height: auto;
     left: 0;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     opacity: 0;
     visibility: hidden;
     z-index: 99;
-    padding-top: 40px;
+    padding: 40px 0 0;
     &::after {
       content: "";
       width: 100%;
@@ -160,17 +160,17 @@
       position: absolute;
       top: 0;
       left: 0;
-      z-index: 1;
+      z-index: -1;
     }
     a:hover {
-      opacity: .7;
+      opacity: 0.7;
     }
-    ul {
+    .submenu {
       display: flex;
       max-width: calc(1200px + 6vw);
       position: relative;
       z-index: 2;
-      padding: 30px 3vw 20px;
+      padding: 30px 3vw 30px;
       margin: 0 auto;
       li {
         figure {
@@ -196,27 +196,72 @@
           margin-top: 15px;
         }
       }
-    }
-    .submenu01 {
-      gap: 40px;
-      li {
-        width: calc(25% - 30px);
+      &--01 {
+        gap: 30px;
+        li {
+          width: calc((100% - 90px) / 3);
+          figure {
+            border-radius: 8px;
+            overflow: hidden;
+          }
+        }
       }
-    }
-    .submenu02 {
-      gap: 30px;
-      li {
-        width: calc((100% - 90px) / 3);
-        figure {
-          border-radius: 8px;
-          overflow: hidden;
+      &--02 {
+        gap: 20px;
+        li {
+          width: calc(20% - 20px);
         }
       }
     }
-    .submenu03 {
-      gap: 20px;
-      li {
-        width: calc(20% - 20px);
+    .menu-slider {
+      margin: 0 -15px;
+      padding: 0 0 30px;
+      .items {
+        margin: 0 15px;
+        figure {
+          line-height: 0;
+          background: #fff;
+        }
+        figcaption {
+          color: #000936;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.75;
+          padding: 10px 15px;
+        }
+        p {
+          color: #fff;
+          display: -webkit-box;
+          line-height: 1.5;
+          height: calc(1em * 2 * 1.5);
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 2;
+          margin-top: 15px;
+        }
+      }
+      .slick-prev,
+      .slick-next {
+        height: 26px;
+        width: 12px;
+        &::before {
+          content: "";
+          height: 100%;
+          width: 100%;
+          background: url("/assets/images/arrow_icon03.png") no-repeat center;
+          background-size: contain;
+          display: block;
+        }
+      }
+      .slick-prev {
+        left: -20px;
+      }
+      .slick-next {
+        right: -20px;
+        &::before {
+          transform: rotate(180deg);
+        }
       }
     }
   }

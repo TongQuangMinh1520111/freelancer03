@@ -36,7 +36,7 @@ $(document).ready(function () {
     cssEase: "linear",
     responsive: [
       {
-        breakpoint: 767,
+        breakpoint: 768,
         settings: {
           arrows:false,
           slidesToShow: 2,
@@ -55,7 +55,7 @@ $(document).ready(function () {
     cssEase: "linear",
     responsive: [
       {
-        breakpoint: 767,
+        breakpoint: 768,
         settings: {
           arrows:false,
           slidesToShow: 1,

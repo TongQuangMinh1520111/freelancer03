@@ -145,38 +145,63 @@
   justify-content: space-between;
   &__cont {
     width: 47%;
-    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .c-title03 {
+      width: max-content;
+    }
     .sec {
       p:not(:last-chidl) {
         margin-bottom: 20px;
       }
     }
   }
-  figure {
+  &__img {
     width: 50%;
-    height: auto;
+    height: 100%;
+    line-height: 0;
     position: relative;
-    img {
+    > img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 10px;
     }
-    &::after {
-      content: "";
+    .txt {
+      max-width: 60px;
       position: absolute;
       bottom: 0;
       right: -40px;
       transform: translateX(100%);
+      > img {
+        width: 100%;
+        object-fit: contain;
+      }
+      @include max(1400px) {
+        right: 0;
+        transform: none;
+      }
     }
   }
   &--01 {
     flex-direction: row-reverse;
-    figure {
-      &::after {
-        right: auto;
-        left: -40px;
-        transform: translateX(100%);
+    .m-block03__img .txt {
+      right: auto;
+      left: -40px;
+      transform: translateX(100%);
+    }
+  }
+  @include sp {
+    flex-direction: column;
+    &__cont {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__img {
+      width: 100%;
+      .txt {
+        width: 7.823vw;
       }
     }
   }
@@ -198,6 +223,29 @@
   .list-3cols {
     margin-top: 35px;
   }
+  @include max(1024px) {
+    .c-title02 {
+      margin-bottom: 35px;
+    }
+    .txt01 {
+      font-size: 18px;
+    }
+  }
+}
+
+.m-block05 {
+  background: url("/assets/images/dekton/dekton_bg01.png") no-repeat top;
+  background-size: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 13vw 0;
+  .c-slider01 .slick-dots li.slick-active button:before {
+    background: #0779f1;
+    border-color: #0779f1;
+  }
+  @include max(1024px) {
+    padding: 13vw 0 60px;
+  }
 }
 .m-blockfqa {
   dl {
@@ -215,7 +263,7 @@
       position: relative;
       padding: 20px 60px 20px 30px;
       @include sp {
-        font-size: 15px;
+        font-size: 16px;
         padding: 10px 40px 10px 3vw;
       }
 

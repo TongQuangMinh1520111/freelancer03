@@ -37,21 +37,24 @@ header.m-header
         li.sub
           span Hạng Mục Ốp Đá
           .m-header__submenu
-            ul.submenu01
-              li.item
-                +subMenuLink('#',path+"assets/images/menu_img01.jpg","Phòng bếp","text text text text")
-              li.item
-                +subMenuLink('#',path+"assets/images/menu_img02.jpg","Phòng bếp")
-              li.item
-                +subMenuLink('#',path+"assets/images/menu_img03.jpg","Phòng bếp")
-              li.item
-                +subMenuLink('#',path+"assets/images/menu_img04.jpg","Phòng bếp")
+            .inner 
+              ul.menu-slider
+                li.items
+                  +subMenuLink('#',path+"assets/images/menu_img01.jpg","Phòng bếp test test test test test","text text text text test test test test test")
+                li.items
+                  +subMenuLink('#',path+"assets/images/menu_img02.jpg","Phòng bếp")
+                li.items
+                  +subMenuLink('#',path+"assets/images/menu_img03.jpg","Phòng bếp")
+                li.items
+                  +subMenuLink('#',path+"assets/images/menu_img04.jpg","Phòng bếp")
+                li.items
+                  +subMenuLink('#',path+"assets/images/menu_img04.jpg","Phòng bếp")
         li.sub
           span Giả Lập Không Gian
           .m-header__submenu
-            ul.submenu02
+            ul.submenu.submenu--01
               li
-                +subMenuLink('#',path+"assets/images/menu_img05.jpg","Hình dung trực tuyến")
+                +subMenuLink('#',path+"assets/images/menu_img05.jpg","Hình dung trực tuyến test test")
               li
                 +subMenuLink('#',path+"assets/images/menu_img06.jpg","Nhà bếp 3D")
               li
@@ -59,7 +62,7 @@ header.m-header
         li.sub
           span Tin Tức
           .m-header__submenu
-            ul.submenu03
+            ul.submenu.submenu--02
               li
                 +subMenuLink('#',path+"assets/images/menu_img08.jpg","Blog & Sự kiện")
               li
