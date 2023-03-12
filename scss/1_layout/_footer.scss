@@ -5,7 +5,7 @@
   background: #000936;
   position: relative;
   z-index: 1;
-  padding: 100px 0 100px;
+  padding: 100px 0 0;
   margin-top: 12.5vw;
   &::before {
     content: "";
@@ -53,14 +53,134 @@
         font-size: 20px;
         font-weight: 700;
         padding-bottom: 15px;
-		margin-bottom: 20px;
+        margin-bottom: 20px;
       }
-	  .f_txt01 {
-		font-size: 18px;
-		font-weight: 700;
-		line-height: 1.33;
-		margin-bottom: 10px;
-	  }
+      .f_txt01 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.33;
+        margin-bottom: 10px;
+      }
+      .f_list {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+        li {
+          position: relative;
+          display: flex;
+          margin-bottom: 5px;
+          &::before {
+            content: "";
+            width: 6px;
+            height: 10px;
+            display: block;
+            background: url(/assets/images/icon03.png) no-repeat center;
+            background-size: contain;
+            position: relative;
+            top: 8px;
+            margin-right: 10px;
+          }
+        }
+      }
+      .list-social {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px -30px;
+        > li {
+          width: 30px;
+          margin: 0 15px 30px;
+        }
+      }
+      .f_txt02 {
+        display: flex;
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+        > a {
+          color: #fff;
+          font-weight: 400;
+          display: inline-block;
+          margin-left: 4px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: 0;
+        }
+        &.icon01::before {
+          width: 12px;
+          height: 17px;
+          background: url(/assets/images/f_ico01.png) no-repeat center;
+          background-size: contain;
+        }
+        &.icon02::before {
+          width: 14px;
+          height: 14px;
+          background: url(/assets/images/f_ico02.png) no-repeat center;
+          background-size: contain;
+        }
+        &.phone {
+          display: flex;
+          flex-wrap: wrap;
+          &::before {
+            width: 15px;
+            height: 15px;
+            background: url(/assets/images/f_ico03.png) no-repeat center;
+            background-size: contain;
+          }
+        }
+        &.mail {
+          display: flex;
+          flex-wrap: wrap;
+          &::before {
+            width: 16px;
+            height: 11px;
+            background: url(/assets/images/email_icon02.png) no-repeat center;
+            background-size: contain;
+            top: 10px;
+          }
+        }
+      }
     }
+    &__contact {
+      border-top: 1px solid #fff;
+      padding: 20px 0 0;
+      p {
+        font-weight: 700;
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+      .register {
+        margin-bottom: 15px;
+        input {
+          width: 100%;
+          height: 50px;
+          padding: 10px;
+          font-weight: 400;
+          box-sizing: border-box;
+          &::placeholder{
+            color: #7C7C7C;
+            font-style: italic;
+          }
+        }
+      }
+    }
+   
+  }
+  address {
+    background: #0779F1;
+    color: #fff;
+    font-weight: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+    padding:22px 3vw;
+    margin-top: 100px;
   }
 }
