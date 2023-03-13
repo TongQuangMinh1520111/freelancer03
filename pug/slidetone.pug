@@ -1,0 +1,263 @@
+extends _layout/default
+
+block vars
+  -title        = 'Trang chủ test'
+  -description  = 'Trang chủ - Spiderum trang tin tức'
+  -keywords     = 'Trang chủ, Spiderum'
+  -pageID       = 'top'
+  -image        = 'https://images.unsplash.com/photo-1629927506216-fcdf656d74de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'
+  -path         = ''
+
+block container
+  -
+    var mainvSliderArr = [
+      {src:path+"assets/images/mainv_img01.jpg",alt:"THIẾT KẾ VÔ TẬN TÍNH NĂNG TIÊN TIẾN"},
+      {src:path+"assets/images/mainv_img01.jpg",alt:"THIẾT KẾ VÔ TẬN"},
+      {src:path+"assets/images/mainv_img01.jpg",alt:"TÍNH NĂNG TIÊN TIẾN"},
+    ]
+  section#slidetone_mainv
+    +mainvSlider("DEKTON","THIẾT KẾ VÔ TẬN TÍNH NĂNG TIÊN TIẾN",mainvSliderArr)
+  section#slidetone_box01 
+    .inner 
+      .m-block03.m-block03--01
+        .m-block03__cont 
+          h3.c-title03 Silestone là gì
+          .sec 
+            p Silestone® là bề mặt kết hợp của khoáng chất cao cấp, thạch anh và vật liệu tái chế tiên tiến và bền vững hơn trên thị trường, được sản xuất bằng công nghệ HybriQ® độc quyền và sáng tạo.
+            p Bề mặt được thiết kế để chịu được thử thách của thời gian. HybriQ+® (Plus) đại diện cho một bước tiến xa hơn trong việc theo đuổi tính bền vững trong toàn bộ chuỗi giá trị của Cosentino. Các sản phẩm Silestone® với công nghệ HybriQ+® chứa tối thiểu 20% vật liệu tái chế, chẳng hạn như thủy tinh, trong thành phần của chúng.
+        .m-block03__img 
+          img(src=path+"assets/images/dekton/stone_img01.jpg", alt="Đá tự nhiên cuối cùng")
+          .txt
+            img(src=path+"assets/images/dekton/text_dekton.png", alt="dekton", width="59")
+
+  section#slidetone_box02 
+  section#slidetone_box03 
+    .inner
+      h3.c-title02 Lợi Ích Của Silestone
+      ul.c-slider01.slider02
+        li.items
+          a(href="#")
+            figure
+              img(src=path+"assets/images/construc_img02.jpg", alt="Công Trình Thi Công")
+            .sec 
+              h4 CHỐNG TRẦY XƯỚC CAO
+              p.txt Đồ dùng nhà bếp sẽ không làm trầy xước Dekton.
+        li.items
+          a(href="#")
+            figure
+              img(src=path+"assets/images/construc_img02.jpg", alt="Công Trình Thi Công")
+            .sec 
+              h4 CHỐNG TRẦY XƯỚC CAO
+              p.txt Đồ dùng nhà bếp sẽ không làm trầy xước Dekton.
+        li.items
+          a(href="#")
+            figure
+              img(src=path+"assets/images/construc_img02.jpg", alt="Công Trình Thi Công")
+            .sec 
+              h4 CHỐNG TRẦY XƯỚC CAO
+              p.txt Đồ dùng nhà bếp sẽ không làm trầy xước Dekton.
+        li.items
+          a(href="#")
+            figure
+              img(src=path+"assets/images/construc_img02.jpg", alt="Công Trình Thi Công")
+            .sec 
+              h4 CHỐNG TRẦY XƯỚC CAO
+              p.txt Đồ dùng nhà bếp sẽ không làm trầy xước Dekton.
+  section#slidetone_04
+    .m-block05
+      .inner 
+        h3.c-title02 Các Màu Nổi Bật
+        ul.c-slider01.slider01
+            li.items
+              a(href="#") 
+                figure
+                  img(src=path+"assets/images/stone_img01.jpg", alt="Đá Marble Xanh (Green)")
+                .sec
+                  h4 Đá Marble Xanh (Green)
+                  ul.list-tag
+                    li India
+                    li Lớn
+                    li 1.6 - 1.8cm
+            li.items
+              a(href="#") 
+                figure
+                  img(src=path+"assets/images/stone_img01.jpg", alt="Đá Marble Xanh (Green)")
+                .sec
+                  h4 Đá Marble Xanh (Green)
+                  ul.list-tag
+                    li India
+                    li Lớn
+                    li 1.6 - 1.8cmf
+            li.items
+              a(href="#") 
+                figure
+                  img(src=path+"assets/images/stone_img01.jpg", alt="Đá Marble Xanh (Green)")
+                .sec
+                  h4 Đá Marble Xanh (Green)
+                  ul.list-tag
+                    li India
+                    li Lớn
+                    li 1.6 - 1.8cm
+            li.items
+              a(href="#") 
+                figure
+                  img(src=path+"assets/images/stone_img01.jpg", alt="Đá Marble Xanh (Green)")
+                .sec
+                  h4 Đá Marble Xanh (Green)
+                  ul.list-tag
+                    li India
+                    li Lớn
+                    li 1.6 - 1.8cm
+            li.items
+              a(href="#") 
+                figure
+                  img(src=path+"assets/images/stone_img01.jpg", alt="Đá Marble Xanh (Green)")
+                .sec
+                  h4 Đá Marble Xanh (Green)
+                  ul.list-tag
+                    li India
+                    li Lớn
+                    li 1.6 - 1.8cm
+            li.items
+              a(href="#") 
+                figure
+                  img(src=path+"assets/images/stone_img01.jpg", alt="Đá Marble Xanh (Green)")
+                .sec
+                  h4 Đá Marble Xanh (Green)
+                  ul.list-tag
+                    li India
+                    li Lớn
+                    li 1.6 - 1.8cm
+  section#slidetone_05
+    .inner 
+      .m-block04 
+        h3.c-title02 Tính Năng Ưu Việt
+        ul.list-3cols 
+          li 
+            a(href="#")
+              figure 
+                img(src=path+"assets/images/dekton/fea_img01.jpg", alt="GIẢ LẬP KHÔNG GIAN")
+              .sec 
+                h4.ttl GIẢ LẬP KHÔNG GIAN
+                p.txt Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.
+          li 
+            a(href="#")
+              figure 
+                img(src=path+"assets/images/dekton/fea_img01.jpg", alt="GIẢ LẬP KHÔNG GIAN")
+              .sec 
+                h4.ttl GIẢ LẬP KHÔNG GIAN
+                p.txt Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.
+          li 
+            a(href="#")
+              figure 
+                img(src=path+"assets/images/dekton/fea_img01.jpg", alt="GIẢ LẬP KHÔNG GIAN")
+              .sec 
+                h4.ttl GIẢ LẬP KHÔNG GIAN
+                p.txt Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.
+  section#slidetone_06 
+    .inner 
+      h3.c-title02 Ứng Dụng Của Silestone
+      .app_block 
+        .m-block02__cont
+          .frame01
+            figure
+              img(src=path+"assets/images/construc_img01.jpg", alt="Công Trình Thi Công")
+            .block
+              h4 TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+              .sec
+                p TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+                p TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+          .frame02
+            ul.c-slider01.slider02
+              li.items
+                a(href="#")
+                  figure
+                    img(src=path+"assets/images/construc_img02.jpg", alt="Công Trình Thi Công")
+                  .sec 
+                    h4 TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+              li.items
+                a(href="#")
+                  figure
+                    img(src=path+"assets/images/construc_img02.jpg", alt="Công Trình Thi Công")
+                  .sec 
+                    h4 TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+              li.items
+                a(href="#")
+                  figure
+                    img(src=path+"assets/images/construc_img02.jpg", alt="Công Trình Thi Công")
+                  .sec 
+                    h4 TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+              li.items
+                a(href="#")
+                  figure
+                    img(src=path+"assets/images/construc_img02.jpg", alt="Công Trình Thi Công")
+                  .sec 
+                    h4 TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+      .app_block 
+        .m-block02__cont
+          .frame01
+            figure
+              img(src=path+"assets/images/construc_img01.jpg", alt="Công Trình Thi Công")
+            .block
+              h4 TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+              .sec
+                p TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+                p TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+          .frame02
+            ul.c-slider01.slider02
+              li.items
+                a(href="#")
+                  figure
+                    img(src=path+"assets/images/construc_img02.jpg", alt="Công Trình Thi Công")
+                  .sec 
+                    h4 TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+              li.items
+                a(href="#")
+                  figure
+                    img(src=path+"assets/images/construc_img02.jpg", alt="Công Trình Thi Công")
+                  .sec 
+                    h4 TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+              li.items
+                a(href="#")
+                  figure
+                    img(src=path+"assets/images/construc_img02.jpg", alt="Công Trình Thi Công")
+                  .sec 
+                    h4 TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+              li.items
+                a(href="#")
+                  figure
+                    img(src=path+"assets/images/construc_img02.jpg", alt="Công Trình Thi Công")
+                  .sec 
+                    h4 TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+  section#slidetone_box07 
+    .inner 
+      .m-block04 
+        h3.c-title02 Tính Năng Ưu Việt
+        p.txt01 Hơn 130 lựa chọn màu sắc thỏa mãn mọi nhu cầu của bạn
+        p.txt02 Với các tính năng và màu sắc đa dạng phong phú, sản phẩm đá DEKTON thích hợp với mọi ứng dụng nội thất cho căn nhà của bạn
+        ul.list-3cols 
+          li 
+            a(href="#")
+              figure 
+                img(src=path+"assets/images/dekton/fea_img01.jpg", alt="GIẢ LẬP KHÔNG GIAN")
+              .sec 
+                h4.ttl GIẢ LẬP KHÔNG GIAN
+                p.txt Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.
+                p.link Thiết kế ngay 
+          li 
+            a(href="#")
+              figure 
+                img(src=path+"assets/images/dekton/fea_img01.jpg", alt="GIẢ LẬP KHÔNG GIAN")
+              .sec 
+                h4.ttl GIẢ LẬP KHÔNG GIAN
+                p.txt Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.
+                p.link Thiết kế ngay 
+          li 
+            a(href="#")
+              figure 
+                img(src=path+"assets/images/dekton/fea_img01.jpg", alt="GIẢ LẬP KHÔNG GIAN")
+              .sec 
+                h4.ttl GIẢ LẬP KHÔNG GIAN
+                p.txt Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.
+                p.link Thiết kế ngay 
+          
