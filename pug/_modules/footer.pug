@@ -14,19 +14,19 @@ footer.c-footer
           .f_ttl KẾT NỐI VỚI EUROSTONE
           ul.list-social 
             li 
-              a(href="#")
+              a(href="#", target="_blank")
                 img(src='assets/images/facebook.png', alt='facebook', width="30")
             li 
               a(href="#")
                 img(src='assets/images/pinterest.png', alt='pinterest', width="30")
             li 
-              a(href="#")
+              a(href="#", target="_blank")
                 img(src='assets/images/youtube.png', alt='youtube', width="30")
             li 
-              a(href="#")
+              a(href="#", target="_blank")
                 img(src='assets/images/zalo.png', alt='zalo', width="30")
             li 
-              a(href="#")
+              a(href="#", target="_blank")
                 img(src='assets/images/messenger.png', alt='messenger', width="30")
       .footer__block 
         .footer__frame 
@@ -54,7 +54,10 @@ footer.c-footer
         .footer__contact 
           p Đăng ký Email ngay để nhận ưu đãi mới nhất!
           .register 
-            input(type="text" placeholder="Nhập Email")
+            p.cus_input
+              input(type="text" placeholder="Nhập Email")
+            p.btn_submit
+              input(type="submit" value="")
           p.f_logo 
             img(src='assets/images/f_logo.png', alt='facebook', width="137")
   address &copy;2016 EuroStone All Rights Reserved.

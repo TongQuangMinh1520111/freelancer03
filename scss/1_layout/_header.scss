@@ -3,10 +3,8 @@
 ------------------------------------------------------------*/
 .m-header {
   background-color: $color-main;
+  position: relative;
   padding: 20px 0;
-  @include max(1024px) {
-    padding: 10px 0;
-  }
   &__top {
     display: flex;
     justify-content: space-between;
@@ -19,23 +17,20 @@
   &__logo {
     flex-shrink: 0;
     margin-right: 20px;
-    @include max(1024px) {
-      width: 220px;
-      margin: 0;
-    }
     a {
       display: block;
       line-height: 0;
     }
   }
   &__boxright {
+    width: 100%;
     display: flex;
     align-items: center;
     > div:not(:last-child) {
       margin-right: 40px;
     }
     a {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       color: #fff;
       font-size: 16px;
@@ -43,12 +38,10 @@
       text-decoration: none;
       position: relative;
     }
-    @include max(1024px) {
-      display: none;
-    }
   }
   &__phone {
     flex-shrink: 0;
+    pointer-events: none;
     a::before {
       content: "";
       width: 34px;
@@ -72,13 +65,11 @@
     }
   }
   &__search {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     position: relative;
     overflow: hidden;
     border-radius: 5px;
-    @include max(1024px) {
-      width: 33vw;
-    }
     input {
       width: 100%;
       height: 42px;
@@ -111,6 +102,9 @@
         background-size: contain;
         display: block;
       }
+    }
+    @include max(1024px) {
+      display: none;
     }
   }
   &__bottom {
@@ -263,6 +257,91 @@
           transform: rotate(180deg);
         }
       }
+    }
+  }
+
+  @include max(1200px) {
+    .m-header__boxright > div:not(:last-child) {
+      margin-right: 2vw;
+    }
+  }
+  @include max(1024px) {
+    padding: 10px calc(40px + 3vw) 10px 0;
+    &__top {
+      align-items: center;
+    }
+    &__logo {
+      width: 220px;
+    }
+    &__boxright {
+      width: auto;
+      a span {
+        display: none;
+      }
+    }
+    &__phone {
+      pointer-events:inherit;
+    }
+    &__phone a::before,
+    &__mail a::before {
+      margin: 0;
+    }
+    .hamburger {
+      width: 40px;
+      height: 27px;
+      cursor: pointer;
+      display: inline-block;
+      z-index: 100;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 3vw;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      transform: rotate(0deg);
+      transition: all 0.2s;
+      opacity: 1;
+    }
+
+    .hamburger span:nth-child(1) {
+      top: 0px;
+    }
+
+    .hamburger span:nth-child(2) {
+      top: 12px;
+    }
+
+    .hamburger span:nth-child(3) {
+      top: 24px;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      top: 12px;
+      transform: rotate(135deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+      left: -60px;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      top: 12px;
+      transform: rotate(-135deg);
+    }
+  }
+  @include sp {
+    &__logo {
+      width: 46.875vw;
+      max-width: 220px;
+      margin-right: 10px;
     }
   }
 }

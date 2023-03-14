@@ -27,6 +27,9 @@
   padding: 0 0 20px;
   margin: 0 0 80px;
   position: relative;
+  &--01 {
+    color: #000936;
+  }
   &::after {
     content: "";
     width: 250px;

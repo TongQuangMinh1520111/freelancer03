@@ -165,7 +165,7 @@
           background-size: 100%;
           position: absolute;
           z-index: 1;
-          top: -10vw;
+          top: -9.5vw;
           left: 0;
         }
         .frame {
@@ -211,17 +211,11 @@
     position: relative;
     z-index: 9;
   }
-  .illust04 {
-    bottom: -150px;
-  }
-  .c-title02 {
-    color: #000936;
-  }
   .benefit__block {
+    .slick-dotted.slick-slider {
+      margin-bottom: 120px;
+    }
     dl {
-      &:not(:last-child) {
-        margin-bottom: 120px;
-      }
       dt {
         background: #fff;
         border-radius: 10px;
@@ -255,7 +249,7 @@
   }
   @include max(1024px) {
     padding: 60px 0;
-    .benefit__block dl:not(:last-child) {
+    .benefit__block .slick-dotted.slick-slider {
       margin-bottom: 75px;
     }
     .benefit__block dl dt {
@@ -282,9 +276,9 @@
 #dekton_box05 {
   padding: 100px 0 100px;
   .c-title02 {
-    color: #000936;
     margin-bottom: 50px;
   }
+
   @include max(1024px) {
     padding: 0 0 60px;
     .c-title02 {

@@ -52,7 +52,7 @@
   }
   &.illust03 {
     max-width: 750px;
-    top: 0;
+    top: -50px;
     left: 0;
     @include max(1500px) {
       width: 45vw;
@@ -61,7 +61,7 @@
   &.illust04 {
     max-width: 650px;
     right: 0;
-    bottom: 0;
+    bottom: -150px;
     @include max(1500px) {
       width: 40vw;
     }

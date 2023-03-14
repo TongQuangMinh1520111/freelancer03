@@ -15,9 +15,9 @@ block container
       {src:path+"assets/images/mainv_img01.jpg",alt:"THIẾT KẾ VÔ TẬN"},
       {src:path+"assets/images/mainv_img01.jpg",alt:"TÍNH NĂNG TIÊN TIẾN"},
     ]
-  section#slidetone_mainv
+  section#silestone_mainv
     +mainvSlider("DEKTON","THIẾT KẾ VÔ TẬN TÍNH NĂNG TIÊN TIẾN",mainvSliderArr)
-  section#slidetone_box01 
+  section#silestone_box01 
     .inner 
       .m-block03.m-block03--01
         .m-block03__cont 
@@ -27,13 +27,23 @@ block container
             p Bề mặt được thiết kế để chịu được thử thách của thời gian. HybriQ+® (Plus) đại diện cho một bước tiến xa hơn trong việc theo đuổi tính bền vững trong toàn bộ chuỗi giá trị của Cosentino. Các sản phẩm Silestone® với công nghệ HybriQ+® chứa tối thiểu 20% vật liệu tái chế, chẳng hạn như thủy tinh, trong thành phần của chúng.
         .m-block03__img 
           img(src=path+"assets/images/dekton/stone_img01.jpg", alt="Đá tự nhiên cuối cùng")
-          .txt
-            img(src=path+"assets/images/dekton/text_dekton.png", alt="dekton", width="59")
 
-  section#slidetone_box02 
-  section#slidetone_box03 
+  section#silestone_box02
+    div.silestone_bg
+      img(src=path+"assets/images/silestone/hybriq_img01.png", alt="hybriq")
+    .silestone__block
+      .bg
+      .inner 
+        .silestone__cont 
+          .silestone__fr
+            h4 Chúng tôi cố gắng vì sự bền vững và một thế giới tốt đẹp hơn
+            .sec 
+              p HybriQ+® (Plus) đại diện cho một bước tiến xa hơn trong việc theo đuổi tính bền vững trong toàn bộ chuỗi giá trị của Cosentino. Các sản phẩm Silestone® với công nghệ HybriQ+® chứa tối thiểu 20% vật liệu tái chế, chẳng hạn như thủy tinh, trong thành phần của chúng.
+          figure 
+            img(src=path+"assets/images/silestone/hybriq_img02.png", alt="hybriq", width="635")
+  section#silestone_box03 
     .inner
-      h3.c-title02 Lợi Ích Của Silestone
+      h3.c-title02.c-title02--01 Lợi Ích Của Silestone
       ul.c-slider01.slider02
         li.items
           a(href="#")
@@ -63,7 +73,11 @@ block container
             .sec 
               h4 CHỐNG TRẦY XƯỚC CAO
               p.txt Đồ dùng nhà bếp sẽ không làm trầy xước Dekton.
-  section#slidetone_04
+    figure.illust.illust03
+      img(src=path+"assets/images/illust03.svg", alt="illust")
+    figure.illust.illust04
+      img(src=path+"assets/images/illust04.svg", alt="illust")
+  section#silestone_box04
     .m-block05
       .inner 
         h3.c-title02 Các Màu Nổi Bật
@@ -128,10 +142,10 @@ block container
                     li India
                     li Lớn
                     li 1.6 - 1.8cm
-  section#slidetone_05
+  section#silestone_box05
     .inner 
       .m-block04 
-        h3.c-title02 Tính Năng Ưu Việt
+        h3.c-title02.c-title02--01 Tính Năng Ưu Việt
         ul.list-3cols 
           li 
             a(href="#")
@@ -154,9 +168,11 @@ block container
               .sec 
                 h4.ttl GIẢ LẬP KHÔNG GIAN
                 p.txt Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.
-  section#slidetone_06 
+    figure.illust.illust03
+      img(src=path+"assets/images/illust03.svg", alt="illust")
+  section#silestone_box06 
     .inner 
-      h3.c-title02 Ứng Dụng Của Silestone
+      h3.c-title02.c-title02--01 Ứng Dụng Của Silestone
       .app_block 
         .m-block02__cont
           .frame01
@@ -229,10 +245,10 @@ block container
                     img(src=path+"assets/images/construc_img02.jpg", alt="Công Trình Thi Công")
                   .sec 
                     h4 TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
-  section#slidetone_box07 
+  section#silestone_box07 
     .inner 
       .m-block04 
-        h3.c-title02 Tính Năng Ưu Việt
+        h3.c-title02.c-title02--01 Tính Năng Ưu Việt
         p.txt01 Hơn 130 lựa chọn màu sắc thỏa mãn mọi nhu cầu của bạn
         p.txt02 Với các tính năng và màu sắc đa dạng phong phú, sản phẩm đá DEKTON thích hợp với mọi ứng dụng nội thất cho căn nhà của bạn
         ul.list-3cols 
@@ -260,4 +276,6 @@ block container
                 h4.ttl GIẢ LẬP KHÔNG GIAN
                 p.txt Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.
                 p.link Thiết kế ngay 
+    figure.illust.illust04
+      img(src=path+"assets/images/illust04.svg", alt="illust")
           
