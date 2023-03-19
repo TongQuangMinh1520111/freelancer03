@@ -1,9 +1,10 @@
-mixin subMenuLink(href,src,figcap,text)
+mixin subMenuLink(href,src,figcap,text="")
   a(href=href)
     figure 
       img(src=src, alt=figcap)
       figcaption&attributes(attributes)= figcap
-    p= text
+    if text !=""
+      p= text
 
 header.m-header
   .inner
