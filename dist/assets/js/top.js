@@ -15,7 +15,7 @@ $(document).ready(function () {
       $(this).toggleClass("active");
       $(this).find(".m-header__submenu").toggleClass("active");
     });
-    
+
     $(".m-header__bottom--menu a").click(function (e){
       $(".m-header__bottom").removeClass("opened");
     })
