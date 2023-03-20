@@ -20,10 +20,10 @@
       width: 50px;
       height: 50px;
       left: -20px;
-    }
-    &::before {
-      width: 30px;
-      height: 12px;
+      &::before {
+        width: 30px;
+        height: 12px;
+      }
     }
   }
   .slick-next {
@@ -46,10 +46,10 @@
       width: 50px;
       height: 50px;
       right: -20px;
-    }
-    &::before {
-      width: 30px;
-      height: 12px;
+      &::before {
+        width: 30px;
+        height: 12px;
+      }
     }
   }
   .slick-dots {
