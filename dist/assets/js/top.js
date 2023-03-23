@@ -20,7 +20,10 @@ $(document).ready(function () {
       $(".m-header__bottom").removeClass("opened");
     });
   }
-
+  $(".translate li").click(function (e) {
+    $(".translate li").removeClass("current-lang");
+    $(this).addClass("current-lang");
+  });
   $(".menu-slider").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -141,8 +144,7 @@ $(document).ready(function () {
     $(".c-slider01 .sec").matchHeight();
     $(".c-slider01 h4").matchHeight();
   }
-
-  if ($(".m-blockdetail").length) {
+  if($('.m-blockdetail').length) {
     $(".slider-for").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -157,7 +159,7 @@ $(document).ready(function () {
       dots: true,
       focusOnSelect: true,
     });
-
+  
     if ($(".m-blockdetail__tab ").length) {
       $(".tab-ttl li").each(function (index) {
         $(this).click(function () {
@@ -168,5 +170,7 @@ $(document).ready(function () {
         });
       });
     }
+
+  
   }
 });

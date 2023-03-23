@@ -4,34 +4,43 @@
 .displaynone {
   display: none !important;
 }
+
 .m-header {
   background-color: $color-main;
   position: relative;
   padding: 20px 0;
+
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 25px;
+
     @include max(1024px) {
       margin: 0;
     }
   }
+
   &__logo {
     flex-shrink: 0;
     margin-right: 20px;
+
     a {
       display: block;
       line-height: 0;
     }
   }
+
   &__boxright {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+
     > div:not(:last-child) {
       margin-right: 40px;
     }
+
     a {
       display: flex;
       align-items: center;
@@ -42,43 +51,50 @@
       position: relative;
     }
   }
+
   &__phone {
     flex-shrink: 0;
     pointer-events: none;
+
     a::before {
       content: "";
       width: 34px;
       height: 34px;
-      background: url(../images/phone_icon01.png) no-repeat center;
+      background: url(../images/icon_phone.svg) no-repeat center;
       background-size: contain;
       position: relative;
       margin-right: 10px;
     }
   }
+
   &__mail {
     flex-shrink: 0;
+
     a::before {
       content: "";
       width: 34px;
       height: 34px;
-      background: url(../images/email_icon01.png) no-repeat center;
+      background: url(../images/icon_email.svg) no-repeat center;
       background-size: contain;
       position: relative;
       margin-right: 10px;
     }
   }
+
   &__search {
     width: 100%;
     max-width: 400px;
     position: relative;
     overflow: hidden;
     border-radius: 5px;
+
     input {
       width: 100%;
       height: 42px;
       border: none;
       font-size: 16px;
       padding: 10px 60px 10px 10px;
+
       ::placeholder {
         font-size: 16px;
         color: #7c7c7c;
@@ -86,6 +102,7 @@
         font-style: italic;
       }
     }
+
     .btn_search {
       width: 50px;
       height: 100%;
@@ -97,6 +114,7 @@
       top: 0;
       right: 0;
       cursor: pointer;
+
       &::before {
         content: "";
         width: 20px;
@@ -106,25 +124,31 @@
         display: block;
       }
     }
+
     @include max(1024px) {
       display: none;
     }
   }
+
   &__bottom {
     &--menu {
       display: flex;
       justify-content: space-between;
+
       > li {
         > a,
         > span {
           color: #fff;
           font-size: 18px;
           font-weight: 700;
+
           @include max(1200px) {
             font-size: 16px;
           }
+
           cursor: pointer;
         }
+
         @include min(1200px) {
           &.sub:hover {
             > .m-header__submenu {
@@ -136,6 +160,7 @@
       }
     }
   }
+
   &__submenu {
     background-color: #000936;
     position: absolute;
@@ -147,6 +172,7 @@
     visibility: hidden;
     z-index: 99;
     padding: 40px 0 0;
+
     &::after {
       content: "";
       width: 100%;
@@ -158,9 +184,11 @@
       left: 0;
       z-index: -1;
     }
+
     a:hover {
       opacity: 0.7;
     }
+
     .submenu {
       display: flex;
       max-width: calc(1200px + 6vw);
@@ -168,11 +196,13 @@
       z-index: 2;
       padding: 30px 3vw 30px;
       margin: 0 auto;
+
       li {
         figure {
           line-height: 0;
           background: #fff;
         }
+
         figcaption {
           color: #000936;
           font-size: 18px;
@@ -180,6 +210,7 @@
           line-height: 1.75;
           padding: 10px 15px;
         }
+
         p {
           color: #fff;
           display: -webkit-box;
@@ -192,32 +223,41 @@
           margin-top: 15px;
         }
       }
+
       &--01 {
         gap: 30px;
+
         li {
           width: calc((100% - 90px) / 3);
+
           figure {
             border-radius: 8px;
             overflow: hidden;
           }
         }
       }
+
       &--02 {
         gap: 20px;
+
         li {
           width: calc(20% - 20px);
         }
       }
     }
+
     .menu-slider {
       margin: 0 -15px;
       padding: 0 0 30px;
+
       .items {
         margin: 0 15px;
+
         figure {
           line-height: 0;
           background: #fff;
         }
+
         figcaption {
           color: #000936;
           font-size: 18px;
@@ -225,6 +265,7 @@
           line-height: 1.75;
           padding: 10px 15px;
         }
+
         p {
           color: #fff;
           display: -webkit-box;
@@ -237,10 +278,12 @@
           margin-top: 15px;
         }
       }
+
       .slick-prev,
       .slick-next {
         height: 26px;
         width: 12px;
+
         &::before {
           content: "";
           height: 100%;
@@ -250,15 +293,24 @@
           display: block;
         }
       }
+
       .slick-prev {
         left: -20px;
       }
+
       .slick-next {
         right: -20px;
+
         &::before {
           transform: rotate(180deg);
         }
       }
+    }
+  }
+  .translate {
+    flex-shrink: 0;
+    li.current-lang {
+      display: none;
     }
   }
 
@@ -275,8 +327,10 @@
     left: 0;
     z-index: 99;
     padding: 10px calc(40px + 3vw) 10px 0;
+
     &__top {
       align-items: center;
+
       &.active::after {
         content: "";
         width: 100%;
@@ -288,22 +342,28 @@
         z-index: 999;
       }
     }
+
     &__logo {
       width: 220px;
     }
+
     &__boxright {
       width: auto;
+
       a span {
         display: none;
       }
     }
+
     &__phone {
       pointer-events: inherit;
     }
+
     &__phone a::before,
     &__mail a::before {
       margin: 0;
     }
+
     &__bottom {
       width: 100%;
       height: 100%;
@@ -316,20 +376,26 @@
       overflow-y: auto;
       transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
       transform: translateX(100%);
+
       &.opened {
         transform: translateX(0);
       }
+
       &--menu {
         flex-direction: column;
         align-items: center;
+
         > li {
           width: 100%;
           border-top: 1px solid #fff;
+
           &:first-child {
             border-top: none;
           }
+
           &.sub {
             position: relative;
+
             &::after {
               content: "";
               width: 6px;
@@ -341,11 +407,13 @@
               top: 22px;
               right: 3vw;
               transform: rotate(90deg);
-              transition: all .3s ease;
+              transition: all 0.3s ease;
             }
+
             &.active::after {
               transform: rotate(-90deg);
             }
+
             span {
               height: 55px;
               display: flex;
@@ -353,6 +421,7 @@
               justify-content: center;
             }
           }
+
           > a {
             display: flex;
             align-items: center;
@@ -362,31 +431,39 @@
         }
       }
     }
+
     &__submenu {
       display: none;
       opacity: 1;
       visibility: visible;
       position: relative;
       padding: 0;
+
       &.active {
         display: block;
       }
+
       &::after {
         content: none;
       }
+
       .inner {
         background: #fff;
         padding: 0;
       }
+
       figure img {
         display: none;
       }
+
       .menu-slider {
         padding: 0;
         margin: 0;
+
         .items {
           margin: 0;
           border-top: 1px solid #000936;
+
           > a {
             width: 100%;
             display: flex;
@@ -400,6 +477,7 @@
             font-size: 15px;
             padding: 0;
           }
+
           p {
             color: #000936;
             text-align: center;
@@ -408,15 +486,18 @@
           }
         }
       }
+
       .submenu {
         flex-direction: column;
         background: #fff;
         padding: 0;
         gap: 0;
+
         li {
           width: 100% !important;
           margin: 0 !important;
           border-top: 1px solid #000936;
+
           a {
             display: flex;
             width: 100%;
@@ -424,6 +505,7 @@
             align-items: center;
             justify-content: center;
           }
+
           figcaption {
             height: auto;
             font-size: 15px;
@@ -431,6 +513,7 @@
         }
       }
     }
+
     .hamburger {
       width: 40px;
       height: 27px;
@@ -483,11 +566,35 @@
       transform: rotate(-135deg);
     }
   }
+
   @include sp {
     &__logo {
       width: 46.875vw;
       max-width: 220px;
       margin-right: 10px;
+    }
+  }
+  @include max(490px) {
+    .inner {
+      padding-right: 0;
+    }
+    .m-header__mail a::before,
+    .m-header__phone a::before {
+      width: 25px;
+      height: 25px;
+    }
+    .hamburger {
+      width: 30px;
+      height: 22px;
+    }
+    .hamburger span {
+      height: 2px;
+    }
+    .hamburger span:nth-child(2) {
+      top: 10px;
+    }
+    .hamburger span:nth-child(3) {
+      top: 20px;
     }
   }
 }

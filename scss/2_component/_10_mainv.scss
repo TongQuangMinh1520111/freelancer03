@@ -78,7 +78,6 @@
       width: 100%;
       max-width: 100%;
     }
-  
   }
   .items {
     border-radius: 8px;
@@ -97,6 +96,84 @@
       button:hover:before {
         background: #0779f1;
       }
+    }
+  }
+}
+
+.m-mainv01 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding: 150px 3vw 300px;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 9, 54, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 10.417vw;
+    background: url(/assets/images/icon_wave01.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: 2;
+  }
+  h2 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    position: relative;
+    z-index: 3;
+    &::after {
+      content: "";
+      width: 77px;
+      height: 2px;
+      background: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  @include max(1024px) {
+    width: 55vw;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  max-width: calc(1200px + 6vw);
+  padding: 0 3vw;
+  margin: 30px auto 0;
+  li {
+    display: flex;
+   align-items: center;
+    color: #000;
+    font-size: 14px;
+    position: relative;
+    &:not(:last-child)::after {
+      content: "";
+      width: 5px;
+      height: 10px;
+      background: url(/assets/images/ico_arr01.svg) no-repeat center;
+      background-size: contain;
+      display: block;
+      margin: 0 10px;
+    }
+    a {
+      color: #000;
     }
   }
 }

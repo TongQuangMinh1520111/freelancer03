@@ -2,8 +2,14 @@ extends _layout/default
 
 block container
   section#detail_mainv
-    .mainvdetail-block
+    .m-mainv01
       h2 MARBLE
+    ul.breadcrumb
+      li
+        a(href="#") Top
+      li
+        a(href="#") Đá Marble - Cẩm Thạch
+      li Đá Marble Trắng
   section#detail_box01 
     .inner 
        .m-blockdetail
@@ -52,7 +58,7 @@ block container
                       dt Kích thước tiêu chuẩn (normal size)
                       dd 303cm x 143cm (119” x 56”) 303cm x 143cm (119” x 56”)303cm x 143cm (119” x 56”)303cm x 143cm (119” x 56”)
                     dl 
-                      dt thước khổ lớn (jumbo size) 
+                      dt Kích thước khổ lớn (jumbo size) 
                       dd 330cm x 165cm (130” x 65”)
                     dl 
                       dt ĐỘ DÀY TIÊU CHUẨN
@@ -88,10 +94,10 @@ block container
       .reference_block 
         .reference_cont 
           h3 BẠN CẦN THAM KHẢO GIÁ?
-          p Liên hệ ngay với chúng tôi để nhận báo giá chi tiết nhất  phù hợp với nhu cầu của quý khách.
-          .c-btn01
+          p Liên hệ ngay với chúng tôi để nhận báo giá chi tiết nhất phù hợp với nhu cầu của quý khách.
+          .c-btn01.c-btn01--01
             a(href="#") NHẬN BÁO GIÁ
-        figure 
+        figure.reference_img
           img(src=path+"assets/images/detail/detail_img01.jpg", alt="NHẬN BÁO GIÁ")
       .viewmore_block 
         .viewmore_cont 
@@ -99,7 +105,8 @@ block container
           p text text text
         .viewmore_btn 
           span XEM THÊM
-  section#detail_box03 
+  section#detail_box03
+    .bg-wave
     .inner 
       h3.c-title02 Sản Phẩm Tương Tự
       ul.c-slider01.slider01
@@ -165,7 +172,7 @@ block container
                 li 1.6 - 1.8cm
   section#detail_box04 
     .inner 
-      .block01 
+      .block
         h3.c-title03 Bồn rửa chén
         ul.detail_list01 
           li 
@@ -174,15 +181,16 @@ block container
                 img(src=path+"assets/images/detail/products_img01.png", alt="Đối xứng")
               p Đối xứng
           li 
-            figure 
-              img(src=path+"assets/images/detail/products_img02.png", alt="Cân bằng")
-            p Cân bằng
+            a(href="#") 
+              figure 
+                img(src=path+"assets/images/detail/products_img02.png", alt="Cân bằng")
+              p Cân bằng
           li 
             a(href="#") 
               figure 
                 img(src=path+"assets/images/detail/products_img03.png", alt="Phản chiếu")
               p Phản chiếu
-      .block02 
+      .block
         h3.c-title03 Bồn rửa chén
         ul.detail_list01
           li 
@@ -200,7 +208,7 @@ block container
               figure 
                 img(src=path+"assets/images/detail/products_img06.png", alt="Freccia")
               p Freccia
-      .block03
+      .block
         h3.c-title03 Bồn rửa chén
         ul.detail_list01.detail_list01--01 
           li 
@@ -275,4 +283,5 @@ block container
                 h4.ttl GIẢ LẬP KHÔNG GIAN
                 p.txt Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.
                 p.link Thiết kế ngay 
-      
+    figure.illust.illust04
+      img(src=path+"assets/images/illust04.svg", alt="illust")     
