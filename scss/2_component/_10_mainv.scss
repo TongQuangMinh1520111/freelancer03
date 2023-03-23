@@ -148,7 +148,10 @@
     }
   }
   @include max(1024px) {
-    width: 55vw;
+    padding: 150px 0 200px;
+    h2 {
+      font-size: 40px;
+    }
   }
 }
 
@@ -159,7 +162,7 @@
   margin: 30px auto 0;
   li {
     display: flex;
-   align-items: center;
+    align-items: center;
     color: #000;
     font-size: 14px;
     position: relative;

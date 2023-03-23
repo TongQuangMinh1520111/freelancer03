@@ -79,6 +79,12 @@
             top: 8px;
             margin-right: 10px;
           }
+          a{
+            color:#fff;
+            &:hover {
+              opacity: .7;
+            }
+          }
         }
       }
       .list-social {
