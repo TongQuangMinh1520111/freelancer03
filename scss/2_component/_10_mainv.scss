@@ -153,19 +153,27 @@
       font-size: 40px;
     }
   }
+  @include sp {
+    padding: 125px 0;
+    h2 {
+      font-size: 35px;
+    }
+  }
 }
 
 .breadcrumb {
   display: flex;
+  flex-wrap: wrap;
   max-width: calc(1200px + 6vw);
   padding: 0 3vw;
-  margin: 30px auto 0;
+  margin: 30px auto -10px;
   li {
     display: flex;
     align-items: center;
     color: #000;
     font-size: 14px;
     position: relative;
+    margin: 0 0 10px;
     &:not(:last-child)::after {
       content: "";
       width: 5px;
