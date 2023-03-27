@@ -1,0 +1,175 @@
+#kitchen_mainv {
+  position: relative;
+  z-index: 2;
+  .m-mainv01 {
+    background-image: url(/assets/images/kitchen/mainv.jpg);
+  }
+}
+#kitchen_box01 {
+  z-index: 1;
+  position: relative;
+  padding: 5.208vw 0;
+  overflow: hidden;
+  .list-3cols > li {
+    border-radius: none;
+    background: none;
+    figure {
+      border-radius: 10px;
+      overflow: hidden;
+      line-height: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .sec {
+      padding: 15px 0 0;
+      h4 {
+        font-size: 22px;
+        text-align: left;
+      }
+    }
+  }
+
+  @include max(1024px) {
+    padding: 50px 0;
+    .list-3cols > li .sec h4 {
+      font-size: 18px;
+    }
+  }
+  @include sp {
+    .list-3cols > li figure {
+      border-radius: 5px;
+    }
+    .list-3cols > li .sec h4 {
+      font-size: 16px;
+
+    }
+  }
+}
+#kitchen_box02 {
+  position: relative;
+  padding: 12vw 0 14vw;
+  margin-bottom: 5.208vw;
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: #fff;
+    z-index: 9;
+    h3 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .sec {
+      margin-bottom: 50px;
+    }
+    .c-btn01 {
+      margin-left: auto;
+    }
+    .box02_img {
+      width: 50%;
+      max-width: 580px;
+      margin-right: 50px;
+      flex-shrink: 0;
+      line-height: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: calc(100% - 16vw);
+    background: #000936;
+    position: absolute;
+    top: 9vw;
+    left: 0;
+  }
+  @include max(1024px) {
+    margin-bottom: 50px;
+    padding: 14vw 0;
+    .inner {
+      .box02_img {
+        margin-right: 3vw;
+      }
+      h3 {
+        font-size: 22px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  @include sp {
+    .inner {
+      flex-direction: column-reverse;
+      align-items: center;
+      .box02_cont {
+        margin: 0 0 40px;
+      }
+      .sec {
+        margin-bottom: 30px;
+      }
+      .c-btn01 {
+        margin: 0;
+      }
+      .box02_img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 5px;
+        margin: 0;
+      }
+    }
+  }
+}
+#kitchen_box03 {
+  .c-title02 {
+    margin-bottom: 40px;
+  }
+}
+#kitchen_box04 {
+  padding: 100px 0 0;
+  .list-2cols {
+    .sec {
+      padding: 0 25px 25px;
+      .logo {
+        line-height: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @include sp {
+    padding: 50px 0 0;
+    .list-2cols .sec {
+      padding: 0 3vw 20px;
+    }
+  }
+}
+
+#kitchen_box05 {
+  position: relative;
+  padding: 5.208vw 0 0;
+  .c-title02 {
+    margin-bottom: 40px;
+  }
+  @include max(1024px) {
+    padding: 50px 0 0;
+  }
+}
+#kitchen_box06 {
+  padding: 100px 0 0;
+  position: relative;
+  z-index: 0;
+  .illust04 {
+    z-index: -1;
+  }
+  @include sp  {
+    padding: 50px 0 0;
+  }
+}

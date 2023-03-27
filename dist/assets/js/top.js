@@ -136,6 +136,9 @@ $(document).ready(function () {
     });
   }
   if ($(".list-3cols").length) {
+    $(".list-3cols figure").matchHeight({
+      byRow: true,
+    });
     $(".list-3cols h4").matchHeight({
       byRow: true,
     });
@@ -144,7 +147,7 @@ $(document).ready(function () {
     $(".c-slider01 .sec").matchHeight();
     $(".c-slider01 h4").matchHeight();
   }
-  if($('.m-blockdetail').length) {
+  if ($(".m-blockdetail").length) {
     $(".slider-for").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -159,7 +162,7 @@ $(document).ready(function () {
       dots: true,
       focusOnSelect: true,
     });
-  
+
     if ($(".m-blockdetail__tab ").length) {
       $(".tab-ttl li").each(function (index) {
         $(this).click(function () {
@@ -171,5 +174,4 @@ $(document).ready(function () {
       });
     }
   }
-
 });
