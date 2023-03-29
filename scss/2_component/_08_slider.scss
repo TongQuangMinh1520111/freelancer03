@@ -83,10 +83,6 @@
     overflow: hidden;
     filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.15));
     margin: 0 10px;
-    @include max(1024px) {
-      border-radius: 5px;
-      margin: 0 5px;
-    }
     a {
       color: #000936;
       transition: all 0.3s ease;
@@ -95,7 +91,14 @@
       }
     }
     figure {
+      height: 220px;
+      overflow: hidden;
       line-height: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
     .sec {
       padding: 20px 20px 25px;
@@ -166,6 +169,32 @@
           padding: 5px 5px;
         }
       }
+    }
+  }
+  &.slider02 .items figure {
+    height: 300px;
+  }
+  @include max(1024px) {
+    .items {
+      border-radius: 5px;
+      margin: 0 5px;
+      figure {
+        height: 180px;
+      }
+    }
+    &.slider02 .items figure {
+      height: 260px;
+    }
+  }
+  @include sp {
+    .items figure {
+      height: 40vw;
+      max-height: 220px;
+    }
+
+    &.slider02 .items figure {
+      height: 60vw;
+      max-height: 400px;
     }
   }
 }

@@ -8,7 +8,7 @@
 #detail_box01 {
   z-index: 1;
   position: relative;
-  padding: 100px 0 0;
+  padding: 5.208vw 0 0;
   overflow: hidden;
   @include max(1024px) {
     padding: 50px 0 0;
@@ -194,7 +194,7 @@
 }
 #detail_box04 {
   .block:not(:last-child) {
-    margin-bottom: 100px;
+    margin-bottom: 5.208vw;
   }
   .detail_list01 {
     display: flex;

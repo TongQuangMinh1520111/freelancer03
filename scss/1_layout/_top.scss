@@ -1,6 +1,6 @@
 #idx_intro {
   position: relative;
-  padding: 150px 0 100px;
+  padding: 7.813vw 0 5.208vw;
   .inner {
     position: relative;
     z-index: 1;
@@ -13,7 +13,7 @@
     bottom: -160px
   }
   @include max(1024px) {
-    padding: 60px 0 60px;
+    padding: 75px 0 60px;
     .illust03{
       top: -8vw;
     }
@@ -25,8 +25,9 @@
 }
 
 #idx_system {
-  padding: 300px 0 100px;
+  padding: 15.625vw 0 5.208vw;
   position: relative;
+  z-index: 2;
   &:after{
     content: "";
     width: 100%;
@@ -98,7 +99,7 @@
 }
 #box_tile {
   overflow: hidden;
-  margin-bottom: 100px;
+  margin-bottom: 5.208vw;
   @include max(1024px) {
     margin-bottom: 60px;
   }
@@ -106,7 +107,7 @@
 
 #box_stone {
   position: relative;
-  padding: 150px 0 100px;
+  padding: 7.813vw 0 5.208vw;
   &::before {
     content: "";
     width: 100%;
@@ -188,7 +189,7 @@
 }
 #idx_service {
   position: relative;
-  padding: 200px 0 250px;
+  padding: 10.417vw 0 13.021vw;
   &::after{
     content: "";
     width: 100%;
@@ -217,7 +218,7 @@
 }
 
 #idx_construction {
-  padding: 100px 0 100px;
+  padding: 5.208vw 0 100px;
   @include max(1024px) {
     padding: 50px 0 60px;
   }
@@ -309,7 +310,7 @@
 
 #idx_contact {
   background: #f5f5f5;
-  padding: 0 0 100px;
+  padding: 0 0 5.208vw;
   @include max(1024px) {
     padding: 0;
   }
