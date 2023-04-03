@@ -204,3 +204,16 @@ iframe {
   max-inline-size: 100%;
   block-size: auto;
 }
+
+
+.only_sp {
+  display: none !important;
+}
+@media screen and (max-width:1024px) {
+  .only_pc {
+    display: none !important;
+  }
+  .only_sp {
+    display: block !important;
+  }
+}
