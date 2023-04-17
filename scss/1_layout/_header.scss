@@ -333,10 +333,12 @@
     }
     .menu_tab {
       padding: 30px 0 50px;
-      display: none;
+      @include min(1025px) {
+        display: none;
         &.active {
           display: block;
         }
+      }
 
       .tab_cont {
         display: flex;
@@ -592,12 +594,75 @@
           }
         }
       }
-      .menu_tab .tab_cont .box-left {
-        display: none;
+      .menu_tab {
+        padding: 0;
+        &:not(:first-child){
+          p.ttl {
+            border-top: 1px solid #000936;
+          }
+        }
+        p.ttl {
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          height: 55px;
+          color: #000936;
+          font-size: 16px;
+          font-weight: 700;
+          cursor: pointer;
+          position: relative;
+          &::after {
+            content: "";
+            border: solid #000936;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            transform: rotate(45deg);
+            transition: all 0.3s ease;
+            position: absolute;
+            top: 22px;
+            right: 3vw;
+            padding: 3px;
+          }
+          &.active {
+            &::after {
+              transform: rotate(-135deg);
+            }
+          }
+        }
+
+        .tab_cont {
+          width: 100%;
+          display: none;
+          &.active {
+            display: block;
+          }
+          .box-left {
+            display: none;
+          }
+          .box-right {
+            width: 100%;
+            background: #000936;
+            flex-direction: column;
+            padding: 20px 3vw;
+            margin: 0;
+            .tab_link:not(:last-child) {
+              margin: 0 0 10px;
+            }
+            dl {
+              text-align: center;
+              margin: 0;
+              dt {
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+              dd p:not(:last-child) {
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
       }
     }
-
-
 
     .hamburger {
       width: 40px;
@@ -650,8 +715,6 @@
       top: 12px;
       transform: rotate(-135deg);
     }
-
-
   }
 
   @include sp {
@@ -684,9 +747,4 @@
       top: 20px;
     }
   }
-}
-
-.sub_tab .m-header__submenu {
-  opacity: 1;
-  visibility: visible;
 }
