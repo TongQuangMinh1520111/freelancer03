@@ -12,6 +12,5 @@ Chạy dự án:
   -npm i gulp-pug
   -npm i gulp-sourcemaps
 
-==> Làm việc
 
 https://frowcss.com/getting-started.html
