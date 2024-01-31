@@ -143,7 +143,7 @@ $(document).ready(function () {
         .find("dt")
         .click(function () {
           $(this).toggleClass("active");
-          $(".benefit__block dl dd").eq(index).slideToggle();
+          $(".benefit__block dl dd").eq(index).toggleClass("active");
         });
     });
   }
