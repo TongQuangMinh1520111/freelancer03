@@ -1203,11 +1203,12 @@ iframe {
   opacity: 0.7;
 }
 #idx_system .system__card--sec {
-  padding: 0 34px 45px;
+  padding: 20px 34px 45px;
 }
 #idx_system .system__card--sec h4 {
   font-size: 22px;
   font-weight: 700;
+  text-transform: uppercase;
   margin-bottom: 15px;
 }
 #idx_system .system__card--sec p {
@@ -1228,7 +1229,7 @@ iframe {
 }
 @media screen and (max-width: 1024px) {
   #idx_system .system__card--sec {
-    padding: 0 3vw 3vw;
+    padding: 3vw 3vw 3vw;
   }
   #idx_system .system__card--sec h4 {
     font-size: 18px;
@@ -1262,8 +1263,10 @@ iframe {
   content: "";
   width: 100%;
   height: 100%;
-  background: url("../images/stone_bg.png") no-repeat center;
-  background-size: contain;
+  background-image: url("../images/stone_bg.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
   z-index: 0;
   position: absolute;
   top: 10vw;
@@ -1378,8 +1381,9 @@ iframe {
   z-index: -1;
 }
 #idx_construction {
-  padding: 5.208vw 0 100px;
+  padding: 3vw 0 100px;
 }
+
 @media screen and (max-width: 1024px) {
   #idx_construction {
     padding: 50px 0 60px;
@@ -1387,6 +1391,7 @@ iframe {
 }
 #idx_construction .c-title02 {
   color: #000936;
+  margin-bottom: 25px;
 }
 #idx_news {
   padding: 0 0 100px;
@@ -1887,6 +1892,12 @@ iframe {
 }
 .benefit__block dd.active {
   height: auto;
+}
+.benefit__block dd .slick-next {
+  right: 0;
+}
+.benefit__block dd .slick-prev {
+  left: 0;
 }
 #dekton_box03 .benefit__cont {
   background: #fff;
@@ -2477,6 +2488,9 @@ iframe {
   top: 9vw;
   left: 0;
 }
+#detail_box03 .c-slider01 .slick-dots li.slick-active button:before {
+  background: #0779f1;
+}
 @media screen and (max-width: 1024px) {
   #detail_box03 {
     margin-bottom: 60px;
@@ -3036,12 +3050,6 @@ iframe {
 .list-2cols > li figure {
   width: 100%;
   line-height: 0;
-  margin-bottom: 25px;
-}
-@media screen and (max-width: 1024px) {
-  .list-2cols > li figure {
-    margin-bottom: 15px;
-  }
 }
 .list-2cols > li figure img {
   width: 100%;
@@ -3258,6 +3266,7 @@ iframe {
     max-height: 180px;
   }
 }
+
 .c-slider01 .slick-prev {
   display: flex;
   align-items: center;
@@ -3371,7 +3380,7 @@ iframe {
   object-fit: cover;
 }
 .c-slider01 .items .sec {
-  padding: 20px 20px 25px;
+  padding: 20px 20px 15px;
 }
 .c-slider01 .items .sec h4 {
   font-size: 20px;
@@ -3840,7 +3849,7 @@ iframe {
   z-index: 9;
 }
 @media screen and (max-width: 1024px) {
-  .m-mainv::after  {
+  .m-mainv::after {
     height: 12vw;
   }
 }
@@ -4017,6 +4026,12 @@ iframe {
 }
 .breadcrumb li a {
   color: #000;
+  transition: all .3s ease;
+}
+@media screen and (min-width: 1025px) {
+  .breadcrumb li a:hover {
+    opacity: 0.7;
+  }
 }
 .m-block01 {
   display: flex;
@@ -4084,7 +4099,7 @@ iframe {
   margin-bottom: 30px;
 }
 .m-block02__cont .frame01 figure {
-  width: 100%;
+  width: calc(100% - 410px);
   max-width: 790px;
   border-radius: 10px;
   overflow: hidden;
@@ -4101,7 +4116,7 @@ iframe {
   max-width: 380px;
   background: #fff;
   flex-shrink: 0;
-  padding: 40px;
+  padding: 40px 30px;
 }
 .m-block02__cont .frame01 .block h4 {
   font-size: 20px;
@@ -4117,6 +4132,7 @@ iframe {
 }
 .m-block02__cont .frame01 .block .link-detail {
   text-align: right;
+  margin-top: 15px;
 }
 .m-block02__cont .frame01 .block .link-detail a {
   display: inline-flex;
@@ -4288,7 +4304,7 @@ iframe {
   z-index: 1;
   padding: 12vw 0 16vw;
 }
-.m-block05 .c-slider02 .slick-dots li.slick-active button:before {
+.m-block05 .c-slider01 .slick-dots li.slick-active button:before {
   background: #0779f1;
   border-color: #0779f1;
 }
@@ -5013,4 +5029,67 @@ iframe {
   border: 1px solid grey;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+}
+.single-block .single_cont {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.single-block .breadcrumb {
+  margin:30px auto 50px;
+}
+.single-block .sec:not(:last-child) {
+  margin-bottom: 40px;
+}
+.single-block .sec h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.single-block .sec p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.single-block .sec figure {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 30px;
+}
+.single-block .sec figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.single-block .sec figure figcaption {
+  margin-top: 10px;
+}
+.single-block .sec a {
+  color: #000936;
+  font-weight: 700;
+  transition: all .25s ease;
+}
+.single-block .sec a:hover {
+  opacity: .7;
+}
+@media screen and (max-width: 1024px) {
+  .single-block {
+    padding: 67px 0 0;
+  }
+  .single-block .breadcrumb {
+    padding: 20px 3vw 0;
+    margin: 0 0 50px;
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .single-block .sec h3 {
+    font-size: 18px;
+  }
+  .single-block .sec:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .single-block .sec p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .single-block .sec figure  {
+    margin-top: 20px;
+  }
 }
