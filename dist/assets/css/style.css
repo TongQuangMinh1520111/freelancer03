@@ -355,7 +355,7 @@ iframe {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1025px) {
   .m-header__bottom--menu > li.sub:hover > .m-header__submenu {
     opacity: 1;
     visibility: visible;
@@ -399,6 +399,17 @@ iframe {
   line-height: 0;
   background: #fff;
 }
+.m-header__submenu .submenu li figure img {
+  width: 100%;
+  height: 204px;
+  object-fit: cover;
+}
+@media screen and (max-width: 1200px) {
+  .m-header__submenu .submenu li figure img {
+    max-height: 204px;
+    height: 15.833vw;
+  }
+}
 .m-header__submenu .submenu li figcaption {
   color: #000936;
   font-size: 18px;
@@ -426,6 +437,17 @@ iframe {
 .m-header__submenu .submenu--01 li figure {
   border-radius: 8px;
   overflow: hidden;
+}
+.m-header__submenu .submenu--01 li figure img {
+  height: 292px;
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 1300px) {
+  .m-header__submenu .submenu--01 li figure img {
+    max-height: 292px;
+    height: 22.75vw;
+  }
 }
 .m-header__submenu .submenu--02 {
   gap: 20px;
@@ -4026,7 +4048,7 @@ iframe {
 }
 .breadcrumb li a {
   color: #000;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 @media screen and (min-width: 1025px) {
   .breadcrumb li a:hover {
@@ -5035,7 +5057,7 @@ iframe {
   margin: 0 auto;
 }
 .single-block .breadcrumb {
-  margin:30px auto 50px;
+  margin: 30px auto 50px;
 }
 .single-block .sec:not(:last-child) {
   margin-bottom: 40px;
@@ -5053,7 +5075,7 @@ iframe {
   text-align: center;
   margin-top: 30px;
 }
-.single-block .sec figure img{
+.single-block .sec figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -5064,10 +5086,10 @@ iframe {
 .single-block .sec a {
   color: #000936;
   font-weight: 700;
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
 .single-block .sec a:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 @media screen and (max-width: 1024px) {
   .single-block {
@@ -5077,7 +5099,6 @@ iframe {
     padding: 20px 3vw 0;
     margin: 0 0 50px;
   }
-
 }
 @media screen and (max-width: 767px) {
   .single-block .sec h3 {
@@ -5089,7 +5110,7 @@ iframe {
   .single-block .sec p:not(:last-child) {
     margin-bottom: 10px;
   }
-  .single-block .sec figure  {
+  .single-block .sec figure {
     margin-top: 20px;
   }
 }
