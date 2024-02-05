@@ -4163,6 +4163,12 @@ iframe {
   font-size: 18px;
   font-weight: 400;
   position: relative;
+  transition:all 0.3s ease;
+}
+@media screen and (min-width: 1025px)  {
+  .m-block02__cont .frame01 .block .link-detail a:hover {
+    opacity: .7;
+  }
 }
 .m-block02__cont .frame01 .block .link-detail a::after {
   content: "";
