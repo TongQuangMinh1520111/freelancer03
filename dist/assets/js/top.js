@@ -188,9 +188,9 @@ $(document).ready(function () {
         });
       });
     }
-    if ($(".viewmore_block").length) {
-      $(".viewmore_block .viewmore_btn").click(function () {
-        $(this).parents().find(".viewmore_cont").toggleClass("showmore");
+    if ($(".detail_block").length) {
+      $(".detail_block .viewmore_btn").click(function () {
+        $(this).parents().find(".hide_cont").toggleClass("showmore");
         $(this).toggleClass("active");
       });
     }

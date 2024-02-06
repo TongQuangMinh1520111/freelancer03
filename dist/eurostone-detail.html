@@ -1,637 +1,857 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title></title>
-    <link rel="preload" href="assets/css/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="assets/css/slick.css">
-    </noscript>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link as="image" rel="preload" href="assets/images/logo.svg" fetchpriority="high">
-    <!-- Primary Meta Tags-->
-    <meta name="title" content="">
-    <meta name="description" content="">
-    <!-- Open Graph / Facebook-->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <!-- Twitter-->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="">
-    <meta property="twitter:title" content="">
-    <meta property="twitter:description" content="">
-    <meta property="twitter:image" content="">
-  </head>
-  <body>
-    <header class="m-header">
-      <div class="inner">
-        <div class="m-header__top">
-          <div class="m-header__logo"><a href="/"><img src="assets/images/logo.svg" alt="EuroStrone" width="280" height="62"></a></div>
-          <div class="m-header__boxright">
-            <div class="m-header__search">
-              <input type="text" placeholder="tìm kiếm">
-              <p class="btn_search"></p>
-            </div>
-            <div class="m-header__phone"><a href="tel:0903930126"><span>0903 930 126</span></a></div>
-            <div class="m-header__mail"> <a href="mailto:info@eurostone.vn"><span>info@eurostone.vn</span></a></div>
-            <ul class="translate">
-              <li class="lang-item lang-item-19 lang-item-vi current-lang lang-item-first"><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="Tiếng Việt" width="25"></a></li>
-              <li class="lang-item lang-item-19 lang-item-vi lang-item-first"><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="Tiếng Việt" width="25"></a></li>
-            </ul>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <link rel="preload" href="assets/css/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="assets/css/slick.css">
+  </noscript>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link as="image" rel="preload" href="assets/images/logo.svg" fetchpriority="high">
+  <!-- Primary Meta Tags-->
+  <meta name="title" content="">
+  <meta name="description" content="">
+  <!-- Open Graph / Facebook-->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <!-- Twitter-->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="">
+  <meta property="twitter:title" content="">
+  <meta property="twitter:description" content="">
+  <meta property="twitter:image" content="">
+</head>
+
+<body>
+  <header class="m-header">
+    <div class="inner">
+      <div class="m-header__top">
+        <div class="m-header__logo"><a href="/"><img src="assets/images/logo.svg" alt="EuroStrone" width="280"
+              height="62"></a></div>
+        <div class="m-header__boxright">
+          <div class="m-header__search">
+            <input type="text" placeholder="tìm kiếm">
+            <p class="btn_search"></p>
           </div>
-        </div>
-        <div class="m-header__bottom">
-          <ul class="m-header__bottom--menu">
-            <li><a href="#">Giới thiệu</a></li>
-            <li><a href="#">Màu Sắc</a></li>
-            <li class="sub sub_tab"><span>Brands</span>
-              <div class="m-header__submenu">
-                <ul class="list_tab only_pc">
-                  <li class="active">Silestone</li>
-                  <li>Silestone 01</li>
-                  <li>Silestone 02</li>
-                </ul>
-                <div class="inner"> 
-                  <div class="menu_tab active">
-                    <p class="ttl only_sp">Silestone</p>
-                    <div class="tab_cont">
-                      <div class="box-left"> 
-                        <figure> <img src="assets/images/menu_silestone.jpg" alt="silestone"></figure>
-                        <div class="sec"> 
-                          <p class="ttl">SILESTONE 01</p>
-                          <p class="txt">text</p>
-                        </div>
-                      </div>
-                      <div class="box-right"> 
-                        <div class="tab_link"> 
-                          <dl> 
-                            <dt>Silestone Information</dt>
-                            <dd> 
-                              <p> <a href="#">text text</a></p>
-                              <p> <a href="#">text text</a></p>
-                            </dd>
-                          </dl>
-                        </div>
-                        <div class="tab_link"> 
-                          <dl> 
-                            <dt>Silestone Information</dt>
-                            <dd> 
-                              <p> <a href="#">text text</a></p>
-                              <p> <a href="#">text text</a></p>
-                            </dd>
-                          </dl>
-                        </div>
-                        <div class="tab_link"> 
-                          <dl> 
-                            <dt>Silestone Information</dt>
-                            <dd> 
-                              <p> <a href="#">text text</a></p>
-                              <p> <a href="#">text text</a></p>
-                            </dd>
-                          </dl>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu_tab"> 
-                    <p class="ttl only_sp">Silestone01</p>
-                    <div class="tab_cont">
-                      <div class="box-left"> 
-                        <figure> <img src="assets/images/menu_silestone.jpg" alt="silestone"></figure>
-                        <div class="sec"> 
-                          <p class="ttl">SILESTONE 02</p>
-                          <p class="txt">text</p>
-                        </div>
-                      </div>
-                      <div class="box-right"> 
-                        <div class="tab_link"> 
-                          <dl> 
-                            <dt>Silestone Information</dt>
-                            <dd> 
-                              <p> <a href="#">text text</a></p>
-                              <p> <a href="#">text text</a></p>
-                            </dd>
-                          </dl>
-                        </div>
-                        <div class="tab_link"> 
-                          <dl> 
-                            <dt>Silestone Information</dt>
-                            <dd> 
-                              <p> <a href="#">text text</a></p>
-                              <p> <a href="#">text text</a></p>
-                            </dd>
-                          </dl>
-                        </div>
-                        <div class="tab_link"> 
-                          <dl> 
-                            <dt>Silestone Information</dt>
-                            <dd> 
-                              <p> <a href="#">text text</a></p>
-                              <p> <a href="#">text text</a></p>
-                            </dd>
-                          </dl>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu_tab"> 
-                    <p class="ttl only_sp">Silestone02</p>
-                    <div class="tab_cont">
-                      <div class="box-left"> 
-                        <figure> <img src="assets/images/menu_silestone.jpg" alt="silestone"></figure>
-                        <div class="sec"> 
-                          <p class="ttl">SILESTONE 03</p>
-                          <p class="txt">text</p>
-                        </div>
-                      </div>
-                      <div class="box-right"> 
-                        <div class="tab_link"> 
-                          <dl> 
-                            <dt>Silestone Information</dt>
-                            <dd> 
-                              <p> <a href="#">text text</a></p>
-                              <p> <a href="#">text text</a></p>
-                            </dd>
-                          </dl>
-                        </div>
-                        <div class="tab_link"> 
-                          <dl> 
-                            <dt>Silestone Information</dt>
-                            <dd> 
-                              <p> <a href="#">text text</a></p>
-                              <p> <a href="#">text text</a></p>
-                            </dd>
-                          </dl>
-                        </div>
-                        <div class="tab_link"> 
-                          <dl> 
-                            <dt>Silestone Information</dt>
-                            <dd> 
-                              <p> <a href="#">text text</a></p>
-                              <p> <a href="#">text text</a></p>
-                            </dd>
-                          </dl>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="sub"><span>Hạng Mục Ốp Đá</span>
-              <div class="m-header__submenu">
-                <div class="inner"> 
-                  <ul class="menu-slider">
-                    <li class="items"><a href="#">
-                            <figure> <img src="assets/images/menu_img01.jpg" alt="Phòng bếp test test test test test">
-                              <figcaption>Phòng bếp test test test test test</figcaption>
-                            </figure>
-                            <p>text text text text test test test test test</p></a>
-                    </li>
-                    <li class="items"><a href="#">
-                            <figure> <img src="assets/images/menu_img02.jpg" alt="Phòng bếp">
-                              <figcaption>Phòng bếp</figcaption>
-                            </figure></a>
-                    </li>
-                    <li class="items"><a href="#">
-                            <figure> <img src="assets/images/menu_img03.jpg" alt="Phòng bếp">
-                              <figcaption>Phòng bếp</figcaption>
-                            </figure></a>
-                    </li>
-                    <li class="items"><a href="#">
-                            <figure> <img src="assets/images/menu_img04.jpg" alt="Phòng bếp">
-                              <figcaption>Phòng bếp</figcaption>
-                            </figure></a>
-                    </li>
-                    <li class="items"><a href="#">
-                            <figure> <img src="assets/images/menu_img04.jpg" alt="Phòng bếp">
-                              <figcaption>Phòng bếp</figcaption>
-                            </figure></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="sub"><span>Giả Lập Không Gian</span>
-              <div class="m-header__submenu">
-                <ul class="submenu submenu--01">
-                  <li><a href="#">
-                          <figure> <img src="assets/images/menu_img05.jpg" alt="Hình dung trực tuyến test test">
-                            <figcaption>Hình dung trực tuyến test test</figcaption>
-                          </figure></a>
-                  </li>
-                  <li><a href="#">
-                          <figure> <img src="assets/images/menu_img06.jpg" alt="Nhà bếp 3D">
-                            <figcaption>Nhà bếp 3D</figcaption>
-                          </figure></a>
-                  </li>
-                  <li><a href="#">
-                          <figure> <img src="assets/images/menu_img07.jpg" alt="Bảng thiết kế">
-                            <figcaption>Bảng thiết kế</figcaption>
-                          </figure></a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="sub"><span>Tin Tức</span>
-              <div class="m-header__submenu">
-                <ul class="submenu submenu--02">
-                  <li><a href="#">
-                          <figure> <img src="assets/images/menu_img08.jpg" alt="Blog &amp; Sự kiện">
-                            <figcaption>Blog &amp; Sự kiện</figcaption>
-                          </figure></a>
-                  </li>
-                  <li><a href="#">
-                          <figure> <img src="assets/images/menu_img09.jpg" alt="Mẫu nhà đẹp">
-                            <figcaption>Mẫu nhà đẹp</figcaption>
-                          </figure></a>
-                  </li>
-                  <li><a href="#">
-                          <figure> <img src="assets/images/menu_img10.jpg" alt="Bảng thiết kế">
-                            <figcaption>Bảng thiết kế</figcaption>
-                          </figure></a>
-                  </li>
-                  <li><a href="#">
-                          <figure> <img src="assets/images/menu_img12.jpg" alt="Bảng thiết kế">
-                            <figcaption>Bảng thiết kế</figcaption>
-                          </figure></a>
-                  </li>
-                  <li><a href="#">
-                          <figure> <img src="assets/images/menu_img11.jpg" alt="Bảng thiết kế">
-                            <figcaption>Bảng thiết kế</figcaption>
-                          </figure></a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Cosentino City</a></li>
-            <li><a href="#">Professionals</a></li>
+          <div class="m-header__phone"><a href="tel:0903930126"><span>0903 930 126</span></a></div>
+          <div class="m-header__mail"> <a href="mailto:info@eurostone.vn"><span>info@eurostone.vn</span></a></div>
+          <ul class="translate">
+            <li class="lang-item lang-item-19 lang-item-vi current-lang lang-item-first"><a href="#"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg=="
+                  alt="Tiếng Việt" width="25"></a></li>
+            <li class="lang-item lang-item-19 lang-item-vi lang-item-first"><a href="#"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII="
+                  alt="Tiếng Việt" width="25"></a></li>
           </ul>
         </div>
-        <div class="hamburger"><span> </span><span></span><span></span></div>
       </div>
-    </header>
-    <main class="l-main">
-      <section id="detail_mainv">
-        <div class="m-mainv01">
-          <h2>MARBLE</h2>
-        </div>
-        <ul class="breadcrumb">
-          <li><a href="#">Top</a></li>
-          <li><a href="#">Đá Marble - Cẩm Thạch</a></li>
-          <li>Đá Marble Trắng</li>
+      <div class="m-header__bottom">
+        <ul class="m-header__bottom--menu">
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Màu Sắc</a></li>
+          <li class="sub sub_tab"><span>Brands</span>
+            <div class="m-header__submenu">
+              <ul class="list_tab only_pc">
+                <li class="active">Silestone</li>
+                <li>Silestone 01</li>
+                <li>Silestone 02</li>
+              </ul>
+              <div class="inner">
+                <div class="menu_tab active">
+                  <p class="ttl only_sp">Silestone</p>
+                  <div class="tab_cont">
+                    <div class="box-left">
+                      <figure> <img src="assets/images/menu_silestone.jpg" alt="silestone"></figure>
+                      <div class="sec">
+                        <p class="ttl">SILESTONE 01</p>
+                        <p class="txt">text</p>
+                      </div>
+                    </div>
+                    <div class="box-right">
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu_tab">
+                  <p class="ttl only_sp">Silestone01</p>
+                  <div class="tab_cont">
+                    <div class="box-left">
+                      <figure> <img src="assets/images/menu_silestone.jpg" alt="silestone"></figure>
+                      <div class="sec">
+                        <p class="ttl">SILESTONE 02</p>
+                        <p class="txt">text</p>
+                      </div>
+                    </div>
+                    <div class="box-right">
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu_tab">
+                  <p class="ttl only_sp">Silestone02</p>
+                  <div class="tab_cont">
+                    <div class="box-left">
+                      <figure> <img src="assets/images/menu_silestone.jpg" alt="silestone"></figure>
+                      <div class="sec">
+                        <p class="ttl">SILESTONE 03</p>
+                        <p class="txt">text</p>
+                      </div>
+                    </div>
+                    <div class="box-right">
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="sub"><span>Hạng Mục Ốp Đá</span>
+            <div class="m-header__submenu">
+              <div class="inner">
+                <ul class="menu-slider">
+                  <li class="items"><a href="#">
+                      <figure> <img src="assets/images/menu_img01.jpg" alt="Phòng bếp test test test test test">
+                        <figcaption>Phòng bếp test test test test test</figcaption>
+                      </figure>
+                      <p>text text text text test test test test test</p>
+                    </a>
+                  </li>
+                  <li class="items"><a href="#">
+                      <figure> <img src="assets/images/menu_img02.jpg" alt="Phòng bếp">
+                        <figcaption>Phòng bếp</figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="items"><a href="#">
+                      <figure> <img src="assets/images/menu_img03.jpg" alt="Phòng bếp">
+                        <figcaption>Phòng bếp</figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="items"><a href="#">
+                      <figure> <img src="assets/images/menu_img04.jpg" alt="Phòng bếp">
+                        <figcaption>Phòng bếp</figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="items"><a href="#">
+                      <figure> <img src="assets/images/menu_img04.jpg" alt="Phòng bếp">
+                        <figcaption>Phòng bếp</figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="sub"><span>Giả Lập Không Gian</span>
+            <div class="m-header__submenu">
+              <ul class="submenu submenu--01">
+                <li><a href="#">
+                    <figure> <img src="assets/images/menu_img05.jpg" alt="Hình dung trực tuyến test test">
+                      <figcaption>Hình dung trực tuyến test test</figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li><a href="#">
+                    <figure> <img src="assets/images/menu_img06.jpg" alt="Nhà bếp 3D">
+                      <figcaption>Nhà bếp 3D</figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li><a href="#">
+                    <figure> <img src="assets/images/menu_img07.jpg" alt="Bảng thiết kế">
+                      <figcaption>Bảng thiết kế</figcaption>
+                    </figure>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sub"><span>Tin Tức</span>
+            <div class="m-header__submenu">
+              <ul class="submenu submenu--02">
+                <li><a href="#">
+                    <figure> <img src="assets/images/menu_img08.jpg" alt="Blog &amp; Sự kiện">
+                      <figcaption>Blog &amp; Sự kiện</figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li><a href="#">
+                    <figure> <img src="assets/images/menu_img09.jpg" alt="Mẫu nhà đẹp">
+                      <figcaption>Mẫu nhà đẹp</figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li><a href="#">
+                    <figure> <img src="assets/images/menu_img10.jpg" alt="Bảng thiết kế">
+                      <figcaption>Bảng thiết kế</figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li><a href="#">
+                    <figure> <img src="assets/images/menu_img12.jpg" alt="Bảng thiết kế">
+                      <figcaption>Bảng thiết kế</figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li><a href="#">
+                    <figure> <img src="assets/images/menu_img11.jpg" alt="Bảng thiết kế">
+                      <figcaption>Bảng thiết kế</figcaption>
+                    </figure>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Cosentino City</a></li>
+          <li><a href="#">Professionals</a></li>
         </ul>
-      </section>
-      <section id="detail_box01"> 
-        <div class="inner"> 
-          <div class="m-blockdetail">
-            <div class="detail-slider">
-              <ul class="slider-for"> 
-                <li class="items"> <img src="assets/images/marble/marble_img01.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
-                <li class="items"> <img src="assets/images/marble/marble_img02.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
-                <li class="items"> <img src="assets/images/marble/marble_img03.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
-                <li class="items"> <img src="assets/images/marble/marble_img04.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
-                <li class="items"> <img src="assets/images/marble/marble_img04.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
+      </div>
+      <div class="hamburger"><span> </span><span></span><span></span></div>
+    </div>
+  </header>
+  <main class="l-main">
+    <section id="detail_mainv">
+      <div class="m-mainv01">
+        <h2>MARBLE</h2>
+      </div>
+      <ul class="breadcrumb">
+        <li><a href="#">Top</a></li>
+        <li><a href="#">Đá Marble - Cẩm Thạch</a></li>
+        <li>Đá Marble Trắng</li>
+      </ul>
+    </section>
+    <section id="detail_box01">
+      <div class="inner">
+        <div class="m-blockdetail">
+          <div class="detail-slider">
+            <ul class="slider-for">
+              <li class="items"> <img src="assets/images/marble/marble_img01.jpg"
+                  alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
+              <li class="items"> <img src="assets/images/marble/marble_img02.jpg"
+                  alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
+              <li class="items"> <img src="assets/images/marble/marble_img03.jpg"
+                  alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
+              <li class="items"> <img src="assets/images/marble/marble_img04.jpg"
+                  alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
+              <li class="items"> <img src="assets/images/marble/marble_img04.jpg"
+                  alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
+            </ul>
+            <ul class="slider-nav">
+              <li class="items"> <img src="assets/images/marble/marble_img01.jpg"
+                  alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
+              <li class="items"> <img src="assets/images/marble/marble_img02.jpg"
+                  alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
+              <li class="items"> <img src="assets/images/marble/marble_img03.jpg"
+                  alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
+              <li class="items"> <img src="assets/images/marble/marble_img04.jpg"
+                  alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
+              <li class="items"> <img src="assets/images/marble/marble_img04.jpg"
+                  alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
+            </ul>
+          </div>
+          <div class="m-blockdetail__cont">
+            <div class="block-top">
+              <h4>Đá Marble Trắng Vân Mây (Volakas)</h4>
+              <ul class="list-tag">
+                <li>Mã sản phẩm :<span class="bold">EWH11014</span></li>
+                <li>Dekton - Onirika</li>
               </ul>
-              <ul class="slider-nav"> 
-                <li class="items"> <img src="assets/images/marble/marble_img01.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
-                <li class="items"> <img src="assets/images/marble/marble_img02.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
-                <li class="items"> <img src="assets/images/marble/marble_img03.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
-                <li class="items"> <img src="assets/images/marble/marble_img04.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
-                <li class="items"> <img src="assets/images/marble/marble_img04.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)"></li>
-              </ul>
-            </div>
-            <div class="m-blockdetail__cont"> 
-              <div class="block-top"> 
-                <h4>Đá Marble Trắng Vân Mây (Volakas)</h4>
-                <ul class="list-tag"> 
-                  <li>Mã sản phẩm :<span class="bold">EWH11014</span></li>
-                  <li>Dekton - Onirika</li>
+              <div class="m-blockdetail__tab">
+                <ul class="tab-ttl">
+                  <li class="active">Mô tả</li>
+                  <li>Thông số kỹ Thuật</li>
                 </ul>
-                <div class="m-blockdetail__tab"> 
-                  <ul class="tab-ttl"> 
-                    <li class="active">Mô tả</li>
-                    <li>Thông số kỹ Thuật</li>
-                  </ul>
-                  <div class="tab-cont"> 
-                    <div class="tab-frame active">
-                      <div class="sec"> 
-                        <p>Đá Marble trắng vân mây đến từ Hy Lạp với màu đá trắng chủ đạo cùng với các đường vân màu xám, nâu, tím, hồng..., phù hợp ốp tường trang trí, hoặc các tiện ích khác góp phần tạo nên sự sang trọng cho ngôi nhà của bạn.</p>
-                        <p>Với công nghệ hiện đại đến từ Châu Âu, đá Marble vân mây siêu bền, siêu chắc chắn với thời gian, sẽ đem đến cho bạn một không gian thoải mái, tuyệt vời.</p>
-                      </div>
+                <div class="tab-cont">
+                  <div class="tab-frame active">
+                    <div class="sec">
+                      <p>Đá Marble trắng vân mây đến từ Hy Lạp với màu đá trắng chủ đạo cùng với các đường vân màu xám,
+                        nâu, tím, hồng..., phù hợp ốp tường trang trí, hoặc các tiện ích khác góp phần tạo nên sự sang
+                        trọng cho ngôi nhà của bạn.</p>
+                      <p>Với công nghệ hiện đại đến từ Châu Âu, đá Marble vân mây siêu bền, siêu chắc chắn với thời
+                        gian, sẽ đem đến cho bạn một không gian thoải mái, tuyệt vời.</p>
                     </div>
-                    <div class="tab-frame"> 
-                      <div class="tab-list">
-                        <dl> 
-                          <dt>Kích thước tiêu chuẩn (normal size)</dt>
-                          <dd>303cm x 143cm (119” x 56”) 303cm x 143cm (119” x 56”)303cm x 143cm (119” x 56”)303cm x 143cm (119” x 56”)</dd>
-                        </dl>
-                        <dl> 
-                          <dt>Kích thước khổ lớn (jumbo size) </dt>
-                          <dd>330cm x 165cm (130” x 65”)</dd>
-                        </dl>
-                        <dl> 
-                          <dt>ĐỘ DÀY TIÊU CHUẨN</dt>
-                          <dd>20mm (3/4”)<br>30mm (1 1/6”)</dd>
-                        </dl>
-                        <dl> 
-                          <dt>CÁC LOẠI BỀ MẶT</dt>
-                          <dd>Polished</dd>
-                        </dl>
-                      </div>
+                  </div>
+                  <div class="tab-frame">
+                    <div class="tab-list">
+                      <dl>
+                        <dt>Kích thước tiêu chuẩn (normal size)</dt>
+                        <dd>303cm x 143cm (119” x 56”) 303cm x 143cm (119” x 56”)303cm x 143cm (119” x 56”)303cm x 143cm
+                          (119” x 56”)</dd>
+                      </dl>
+                      <dl>
+                        <dt>Kích thước khổ lớn (jumbo size) </dt>
+                        <dd>330cm x 165cm (130” x 65”)</dd>
+                      </dl>
+                      <dl>
+                        <dt>ĐỘ DÀY TIÊU CHUẨN</dt>
+                        <dd>20mm (3/4”)<br>30mm (1 1/6”)</dd>
+                      </dl>
+                      <dl>
+                        <dt>CÁC LOẠI BỀ MẶT</dt>
+                        <dd>Polished</dd>
+                      </dl>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="gr_btn"> 
-                <div class="c-btn01 c-btn01--01"><a href="#">LIÊN HỆ NGAY</a></div>
-                <div class="c-btn01"><a href="#">CỬA HÀNG</a></div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="detail_box02">
-        <div class="inner">
-          <ul class="list-fea"> 
-            <li> 
-              <figure> <img src="assets/images/detail/icon01.png" alt="chống trầy"></figure>
-              <p>chống trầy</p>
-            </li>
-            <li> 
-              <figure> <img src="assets/images/detail/icon02.png" alt="siêu bền"></figure>
-              <p>siêu bền</p>
-            </li>
-            <li> 
-              <figure> <img src="assets/images/detail/icon03.png" alt="độ cứng  Cao"></figure>
-              <p>độ cứng  Cao</p>
-            </li>
-            <li> 
-              <figure> <img src="assets/images/detail/icon04.png" alt="Chống thấm"></figure>
-              <p>Chống thấm</p>
-            </li>
-          </ul>
-          <div class="reference_block"> 
-            <div class="reference_cont"> 
-              <h3>BẠN CẦN THAM KHẢO GIÁ?</h3>
-              <p>Liên hệ ngay với chúng tôi để nhận báo giá chi tiết nhất phù hợp với nhu cầu của quý khách.</p>
-              <div class="c-btn01 c-btn01--01"><a href="#">NHẬN BÁO GIÁ</a></div>
-            </div>
-            <figure class="reference_img"><img src="assets/images/detail/detail_img01.jpg" alt="NHẬN BÁO GIÁ"></figure>
-          </div>
-          <div class="viewmore_block"> 
-            <div class="viewmore_cont"> 
-              <p>text text text </p>
-              <p>text text text</p>
-              <p>text text text </p>
-              <p>text text text</p>
-            </div>
-            <div class="viewmore_btn"> <span>XEM THÊM</span></div>
-          </div>
-        </div>
-      </section>
-      <section id="detail_box03">
-        <div class="bg-wave"></div>
-        <div class="inner"> 
-          <h3 class="c-title02">Sản Phẩm Tương Tự</h3>
-          <ul class="c-slider01 slider01">
-            <li class="items"><a href="#"> 
-                <figure><img src="assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)"></figure>
-                <div class="sec">
-                  <h4>Đá Marble Xanh (Green)</h4>
-                  <ul class="list-tag">
-                    <li>India</li>
-                    <li>Lớn</li>
-                    <li>1.6 - 1.8cm</li>
-                  </ul>
-                </div></a></li>
-            <li class="items"><a href="#"> 
-                <figure><img src="assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)"></figure>
-                <div class="sec">
-                  <h4>Đá Marble Xanh (Green)</h4>
-                  <ul class="list-tag">
-                    <li>India</li>
-                    <li>Lớn</li>
-                    <li>1.6 - 1.8cmf</li>
-                  </ul>
-                </div></a></li>
-            <li class="items"><a href="#"> 
-                <figure><img src="assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)"></figure>
-                <div class="sec">
-                  <h4>Đá Marble Xanh (Green)</h4>
-                  <ul class="list-tag">
-                    <li>India</li>
-                    <li>Lớn</li>
-                    <li>1.6 - 1.8cm</li>
-                  </ul>
-                </div></a></li>
-            <li class="items"><a href="#"> 
-                <figure><img src="assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)"></figure>
-                <div class="sec">
-                  <h4>Đá Marble Xanh (Green)</h4>
-                  <ul class="list-tag">
-                    <li>India</li>
-                    <li>Lớn</li>
-                    <li>1.6 - 1.8cm</li>
-                  </ul>
-                </div></a></li>
-            <li class="items"><a href="#"> 
-                <figure><img src="assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)"></figure>
-                <div class="sec">
-                  <h4>Đá Marble Xanh (Green)</h4>
-                  <ul class="list-tag">
-                    <li>India</li>
-                    <li>Lớn</li>
-                    <li>1.6 - 1.8cm</li>
-                  </ul>
-                </div></a></li>
-            <li class="items"><a href="#"> 
-                <figure><img src="assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)"></figure>
-                <div class="sec">
-                  <h4>Đá Marble Xanh (Green)</h4>
-                  <ul class="list-tag">
-                    <li>India</li>
-                    <li>Lớn</li>
-                    <li>1.6 - 1.8cm</li>
-                  </ul>
-                </div></a></li>
-          </ul>
-        </div>
-      </section>
-      <section id="detail_box04"> 
-        <div class="inner"> 
-          <div class="block">
-            <h3 class="c-title03">Bồn rửa chén</h3>
-            <ul class="detail_list01"> 
-              <li> <a href="#"> 
-                  <figure><img src="assets/images/detail/products_img01.png" alt="Đối xứng"></figure>
-                  <p>Đối xứng</p></a></li>
-              <li> <a href="#"> 
-                  <figure> <img src="assets/images/detail/products_img02.png" alt="Cân bằng"></figure>
-                  <p>Cân bằng</p></a></li>
-              <li> <a href="#"> 
-                  <figure> <img src="assets/images/detail/products_img03.png" alt="Phản chiếu"></figure>
-                  <p>Phản chiếu</p></a></li>
-            </ul>
-          </div>
-          <div class="block">
-            <h3 class="c-title03">Bồn rửa chén</h3>
-            <ul class="detail_list01">
-              <li> <a href="#"> 
-                  <figure><img src="assets/images/detail/products_img04.png" alt="Bubble"></figure>
-                  <p>Bubble</p></a></li>
-              <li> <a href="#"> 
-                  <figure> <img src="assets/images/detail/products_img05.png" alt="Exelis"></figure>
-                  <p>Exelis</p></a></li>
-              <li> <a href="#"> 
-                  <figure> <img src="assets/images/detail/products_img06.png" alt="Freccia"></figure>
-                  <p>Freccia</p></a></li>
-            </ul>
-          </div>
-          <div class="block">
-            <h3 class="c-title03">Bồn rửa chén</h3>
-            <ul class="detail_list01 detail_list01--01"> 
-              <li> <a href="#">
-                  <figure> <img src="assets/images/detail/cornor_img01.png" alt="Căn bản"></figure>
-                  <p>Căn bản</p></a></li>
-              <li> <a href="#">
-                  <figure> <img src="assets/images/detail/cornor_img02.png" alt="Bán gờ tròn"></figure>
-                  <p>Bán gờ tròn</p></a></li>
-              <li> <a href="#">
-                  <figure> <img src="assets/images/detail/cornor_img03.png" alt="Thác nước / Góc tròn"></figure>
-                  <p>Thác nước / Góc tròn</p></a></li>
-              <li> <a href="#">
-                  <figure> <img src="assets/images/detail/cornor_img01.png" alt="Bậc bán gờ tròn"></figure>
-                  <p>Bậc bán gờ tròn</p></a></li>
-              <li> <a href="#">
-                  <figure> <img src="assets/images/detail/cornor_img05.png" alt="Vát cạnh"></figure>
-                  <p>Vát cạnh</p></a></li>
-              <li> <a href="#">
-                  <figure> <img src="assets/images/detail/cornor_img06.png" alt="Gờ tròn"></figure>
-                  <p>Gờ tròn </p></a></li>
-              <li> <a href="#">
-                  <figure> <img src="assets/images/detail/cornor_img07.png" alt="Hình cung nhọn"></figure>
-                  <p>Hình cung nhọn</p></a></li>
-              <li> <a href="#">
-                  <figure> <img src="assets/images/detail/cornor_img08.png" alt="Đỉnh tròn"></figure>
-                  <p>Đỉnh tròn</p></a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="detail_box05">
-        <div class="inner"> 
-          <div class="m-block04"> 
-            <h3 class="c-title02 c-title02--01">Tính Năng Ưu Việt</h3>
-            <p class="txt01">Hơn 130 lựa chọn màu sắc thỏa mãn mọi nhu cầu của bạn</p>
-            <p class="txt02">Với các tính năng và màu sắc đa dạng phong phú, sản phẩm đá DEKTON thích hợp với mọi ứng dụng nội thất cho căn nhà của bạn</p>
-            <ul class="list-3cols"> 
-              <li> <a href="#">
-                  <figure> <img src="assets/images/dekton/fea_img01.jpg" alt="GIẢ LẬP KHÔNG GIAN"></figure>
-                  <div class="sec"> 
-                    <h4 class="ttl">GIẢ LẬP KHÔNG GIAN</h4>
-                    <p class="txt">Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.</p>
-                    <p class="link">Thiết kế ngay </p>
-                  </div></a></li>
-              <li> <a href="#">
-                  <figure> <img src="assets/images/dekton/fea_img01.jpg" alt="GIẢ LẬP KHÔNG GIAN"></figure>
-                  <div class="sec"> 
-                    <h4 class="ttl">GIẢ LẬP KHÔNG GIAN</h4>
-                    <p class="txt">Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.</p>
-                    <p class="link">Thiết kế ngay </p>
-                  </div></a></li>
-              <li> <a href="#">
-                  <figure> <img src="assets/images/dekton/fea_img01.jpg" alt="GIẢ LẬP KHÔNG GIAN"></figure>
-                  <div class="sec"> 
-                    <h4 class="ttl">GIẢ LẬP KHÔNG GIAN</h4>
-                    <p class="txt">Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.</p>
-                    <p class="link">Thiết kế ngay </p>
-                  </div></a></li>
-            </ul>
-          </div>
-        </div>
-        <figure class="illust illust04"><img src="assets/images/illust04.svg" alt="illust"></figure>
-      </section>
-    </main>
-    <footer class="c-footer">
-      <div class="inner"> 
-        <div class="footer__cont">
-          <div class="footer__block"> 
-            <div class="footer__frame"> 
-              <div class="f_ttl">THÔNG TIN CÔNG TY</div>
-              <div class="f_txt01">CÔNG TY CỔ PHẦN ĐÁ HOA CƯƠNG CHÂU ÂU - EUROSTONE</div>
-              <ul class="f_list"> 
-                <li>MST: 0309720941</li>
-                <li>Người đại diện: Text Text Text</li>
-                <li>Ngày cấp: Text Text Text</li>
-                <li>Nơi cấp: Text Text Text</li>
-              </ul>
-            </div>
-            <div class="footer__frame">
-              <div class="f_ttl">KẾT NỐI VỚI EUROSTONE</div>
-              <ul class="list-social"> 
-                <li> <a href="#" target="_blank"><img src="assets/images/facebook.png" alt="facebook" width="30"></a></li>
-                <li> <a href="#"><img src="assets/images/pinterest.png" alt="pinterest" width="30"></a></li>
-                <li> <a href="#" target="_blank"><img src="assets/images/youtube.png" alt="youtube" width="30"></a></li>
-                <li> <a href="#" target="_blank"><img src="assets/images/zalo.png" alt="zalo" width="30"></a></li>
-                <li> <a href="#" target="_blank"><img src="assets/images/messenger.png" alt="messenger" width="30"></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__block"> 
-            <div class="footer__frame"> 
-              <div class="f_ttl">VỀ EUROSTONE</div>
-              <p class="f_txt02 icon01">Showroom</p>
-              <ul class="f_list"> 
-                <li>số 120 đường số 7, KDC Cityland - Center Hill, P.7, Q. Gò Vấp</li>
-                <li>số 25 đường số 10, KĐT Sala, P. An Lợi Đông, Q.2, TP. Thủ Đức</li>
-              </ul>
-              <p class="f_txt02 icon02">Nhà máy</p>
-              <ul class="f_list"> 
-                <li>số 120 đường số 7, KDC Cityland - Center Hill, P.7, Q. Gò Vấp</li>
-                <li>số 25 đường số 10, KĐT Sala, P. An Lợi Đông, Q.2, TP. Thủ Đức</li>
-              </ul>
-              <p class="f_txt02 phone">Hotline : <a href="tel:0903930126">0903 930 126</a><a href="tel:0903598407">0903 598 407</a></p>
-              <p class="f_txt02 mail">Email : <a href="mailto:info@eurostone.vn">info@eurostone.vn</a></p>
-            </div>
-          </div>
-          <div class="footer__block"> 
-            <div class="footer__frame"> 
-              <p class="f_ttl">CHÍNH SÁCH CHUNG</p>
-              <ul class="f_list"> 
-                <li> <a href="#">Chính sách vận chuyển</a></li>
-                <li> <a href="#">Chính sách thi công</a></li>
-                <li> <a href="#">Chính sách bảo hành</a></li>
-              </ul>
-            </div>
-            <div class="footer__contact"> 
-              <p>Đăng ký Email ngay để nhận ưu đãi mới nhất!</p>
-              <div class="register"> 
-                <p class="cus_input">
-                  <input type="text" placeholder="Nhập Email">
-                </p>
-                <p class="btn_submit">
-                  <input type="submit" value="">
-                </p>
-              </div>
-              <p class="f_logo"> <img src="assets/images/f_logo.png" alt="facebook" width="137"></p>
+            <div class="gr_btn">
+              <div class="c-btn01 c-btn01--01"><a href="#">LIÊN HỆ NGAY</a></div>
+              <div class="c-btn01"><a href="#">CỬA HÀNG</a></div>
             </div>
           </div>
         </div>
       </div>
-      <address>&copy;2016 EuroStone All Rights Reserved.</address>
-    </footer>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/jquery.matchHeight.js"></script>
-    <script src="assets/js/top.js"></script>
-  </body>
+    </section>
+    <section id="detail_box02">
+      <div class="inner">
+        <ul class="list-fea">
+          <li>
+            <figure> <img src="assets/images/detail/icon01.png" alt="chống trầy"></figure>
+            <p>chống trầy</p>
+          </li>
+          <li>
+            <figure> <img src="assets/images/detail/icon02.png" alt="siêu bền"></figure>
+            <p>siêu bền</p>
+          </li>
+          <li>
+            <figure> <img src="assets/images/detail/icon03.png" alt="độ cứng  Cao"></figure>
+            <p>độ cứng Cao</p>
+          </li>
+          <li>
+            <figure> <img src="assets/images/detail/icon04.png" alt="Chống thấm"></figure>
+            <p>Chống thấm</p>
+          </li>
+        </ul>
+        <div class="reference_block">
+          <div class="reference_cont">
+            <h3>BẠN CẦN THAM KHẢO GIÁ?</h3>
+            <p>Liên hệ ngay với chúng tôi để nhận báo giá chi tiết nhất phù hợp với nhu cầu của quý khách.</p>
+            <div class="c-btn01 c-btn01--01"><a href="#">NHẬN BÁO GIÁ</a></div>
+          </div>
+          <figure class="reference_img"><img src="assets/images/detail/detail_img01.jpg" alt="NHẬN BÁO GIÁ"></figure>
+        </div>
+        <div class="detail_block">
+          <div class="hide_cont">
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade active in" id="content_detail-1">
+                <h2><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 20px;">Tìm hiểu chung
+                      về đá Dekton Eter</span></span></h2>
+                <p><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 18px;"><strong>1/
+                        Nguồn gốc xuất xứ</strong></span></span></p>
+                <p style="text-align: justify;"><span style="font-size: 16px;"><span
+                      style="font-family: arial,helvetica,sans-serif;"><a
+                        href="https://eurostone.vn/da-nhan-tao-dekton/"><strong>Đá
+                          Dekton</strong></a>&nbsp;<b>Eter&nbsp;</b>là dòng đá nhân tạo cao cấp “số 1” thế giới được
+                      nghiên cứu, sản xuất bởi Tập đoàn Cosentino, Tây Ban Nha. Cosentino là công ty toàn cầu chuyên sản
+                      xuất, phân phối các bề mặt sáng tạo có giá trị cao cho thế giới thiết kế, kiến trúc được phân phối
+                      rộng rãi với hơn 117 thị trường trên thế giới.</span></span></p>
+                <p><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 18px;"><strong>2.Phân
+                        tích tổng thể </strong></span></span></p>
+                <p style="text-align: justify;"><span style="font-size:16px;"><span
+                      style="font-family:arial,helvetica,sans-serif;">– Tên gọi khác: Dekton Eter&nbsp;</span></span>
+                </p>
+                <p>– Mô tả chung:&nbsp;Đá Dekton Eter&nbsp;–&nbsp;EGY7001&nbsp;được lấy cảm hứng từ đá granite với tông
+                  màu đen và xám, Eter&nbsp;tự hào sở hữu nền tương phản nhẹ nhàng nhưng vẫn mang cảm giác đương đại
+                  mạnh mẽ. Dòng đá này lý tưởng cho cả không gian trong nhà và ngoài trời.&nbsp;Dekton Eter tạo chiều
+                  sâu cho không gian mang đến sự huyền bí, sang trọng và vô cùng đẳng cấp cho bất kỳ hạng mục ốp đá nội
+                  – ngoại thất nào.</p>
+                <div style="text-align: center;">
+                  <div style="text-align:center">
+                    <figure class="image" style="display:inline-block"><img fetchpriority="high" decoding="async"
+                        height="450" src="https://stone.nttung.dev/wp-content/uploads/2024/01/egy7001_eter_slab-1.jpeg"
+                        width="600" title="egy7001_eter_slab-1">
+                      <figcaption>Đá Dekton Eter</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <p style="text-align: justify;"><strong>BÀI VIẾT LIÊN QUAN</strong></p>
+                <p style="text-align: justify;"><strong><img decoding="async"
+                      alt="icon hot 02" height="15"
+                      src="https://stone.nttung.dev/wp-content/uploads/2024/01/icon_hot-02-84.gif" width="48"
+                      title="icon_hot-02-84"></strong><span style="font-size: 16px;"><span
+                      style="font-family: arial,helvetica,sans-serif;"><strong><a
+                          href="https://eurostone.vn/da-dekton-mau-xam/da-dekton-kovik.html"><em>Đá Dekton
+                            Kovik&nbsp;</em></a></strong></span></span></p><strong>
+                </strong>
+                <p><strong>Ưu điểm của đá Dekton Eter:</strong></p>
+                <p>– Chống mài mòn: đá Dekton có khả năng chống mài mòn tốt hơn đá hoa cương nên trở thành sự lựa chọn
+                  lý tưởng cho các hạng mục nội – ngoại thất như mặt tiền, mặt dựng bên ngoài tòa nhà, ốp tường, lát
+                  nền,… kể cả các công trình thương mại thường xuyên chịu sự va chạm.</p>
+                <p>– Chống va đập, trầy xước: Độ cứng cao, đạt 7/10 thang Mohs so với kim cương</p>
+                <p>– Chống thấm, chống bán bẩn tốt: Dekton không chứa nhựa, không xốp nên có khả năng chống thấm, chống
+                  bám bẩn cực cao và dễ dàng làm sạch bằng chất tẩy rửa thông thường.</p>
+                <p>– Chống tia UV, chống cháy: Dekton không bị ảnh hưởng bởi tia cực tím nên màu sắc không bị phai hoặc
+                  xuống cấp.</p>
+                <p>– Đa dạng kích thước: Dekton slab lớn 3200x1440mm thích hợp với những công trình cần sự liên tục,
+                  không thấy mối nối</p>
+                <p>– Đa dạng về độ dày: Dekton sở hữu nhiều độ dày như 8mm, 12mm, 20mm</p>
+                <p><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 16px;"><strong>3. Bề
+                        mặt hoàn thiện </strong><br>– Mat</span></span></p>
+                <p><strong>&nbsp;4. Thông số kỹ thuật </strong><br>– Chủng loại : Đá nung kết<br>– Nhóm : 1<br>– Màu
+                  sắc: màu xám<br>– Kích thước: Slab lớn 3200x1440mm<br>– Độ dày: 4mm, 8mm, 12mm, 20mm<br>– Độ cứng cao,
+                  chống xước: độ cứng 7/10 thang Mohs so với kim cương<br>– Độ giãn nở: 0,02%<br>– Khả năng chống mài
+                  mòn: 125mm3</p>
+                <p><strong><img decoding="async" alt="icon hot 02" height="15"
+                      src="https://stone.nttung.dev/wp-content/uploads/2024/01/icon_hot-02-84.gif" width="48"
+                      title="icon_hot-02-84"></strong><em><span style="font-family: arial,helvetica,sans-serif;"><span
+                        style="font-size: 16px;">&nbsp;Xem chi tiết các thông số kỹ thuật ngay dưới
+                        đây:</span></span></em></p>
+                <div style="text-align: center;"><span style="font-size: 16px;"><span
+                      style="font-family: arial,helvetica,sans-serif;"><iframe height="480"
+                        src="https://drive.google.com/file/d/1AJg7s1q32ZjjdP6w_0Mt1kEKneqUaagV/preview"
+                        width="640"></iframe></span></span></div>
+                <p><span style="font-family: arial,helvetica,sans-serif;">&nbsp;<br><span
+                      style="font-size: 18px;"><strong>5. Ứng dụng </strong></span></span></p>
+                <div style="text-align: justify;"><span style="font-size: 16px;"><span
+                      style="font-family: arial,helvetica,sans-serif;">Với khả năng thiết kế không giới hạn đá Dekton
+                      Eter ứng dụng được cho hầu hết các hạng mục ốp lát nội – ngoại thất. Đặc biệt là các hạng mục
+                      thường xuyên chịu sự tác động bên ngoài như ốp mặt dựng, mặt tiền, lát nền, cầu thang, ốp bếp,…
+                      với vẻ đẹp bền bỉ theo thời gian. Sở hữu các đặc tính chống thấm, chống va đập, chống trầy xước,
+                      chống bám bẩn,… Dekton Eter giúp bạn thỏa sức sáng tạo cho không gian nhà mình với vẻ đẹp sang
+                      trọng, đẳng cấp.<p></p>
+                      <p><strong>– Báo giá:</strong><br>+ <strong>Mặt dựng, mặt tiền tòa nhà</strong>: 5.600.000đ –
+                        11.900.000đ<br>+ <strong>Đảo bếp, bàn bếp</strong>: 5.600.000đ – 11.900.000đ<br>+ <strong>Cầu
+                          thang</strong>: 5.600.000đ – 11.900.000đ<br>+ <strong>Phòng tắm, nhà vệ sinh, lavabo</strong>:
+                        5.600.000đ – 11.900.000đ<br>+ <strong>Mặt bàn</strong>:&nbsp;5.600.000đ – 11.900.000đ<br>+
+                        <strong>Phòng khách, lát nền:</strong> 5.600.000đ – 11.900.000đ</p>
+                      <div style="text-align:center">
+                        <figure class="image" style="display:inline-block"><img loading="lazy" decoding="async"
+                            height="450" src="https://stone.nttung.dev/wp-content/uploads/2024/01/egy7001_eter_1.jpeg"
+                            width="600" title="egy7001_eter_1">
+                          <figcaption>Đá&nbsp;Dekton Eter ốp phòng tắm&nbsp;</figcaption>
+                        </figure>
+                      </div>
+                    </span></span></div>
+                <div style="text-align: center;">
+                  <div style="text-align: justify;">
+                    <div style="text-align:center">
+                      <figure class="image" style="display:inline-block"><img loading="lazy" decoding="async"
+                          height="450" src="https://stone.nttung.dev/wp-content/uploads/2024/01/egy7001_eter_2.jpeg"
+                          width="600" title="egy7001_eter_2">
+                        <figcaption>Đá Dekton Eter ốp đảo bếp</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <p
+                  style="margin: 1em 5px; padding: 5px; font-family: tahoma, Arial, Helvetica, sans-serif; font-size: 11px; border: 2px dashed rgb(41, 120, 24); background-color: rgb(238, 238, 238); text-align: justify;">
+                  <span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 16px;"><span
+                        style="color: rgb(0, 0, 0);">&nbsp;<img loading="lazy" decoding="async"
+                          alt="Đá Hoa Cương Châu Âu" height="31"
+                          src="https://stone.nttung.dev/wp-content/uploads/2024/01/eurostone-01-83.gif" width="56"
+                          title="eurostone-01-83">&nbsp; </span><strong><span style="color: rgb(0, 0, 0);">Quý khách xem
+                          thêm các mẫu Đá Dekton Màu Xám&nbsp;liên quan tại đây:&nbsp;<a
+                            href="https://eurostone.vn/da-dekton-mau-xam/">https://eurostone.vn/da-dekton-mau-xam/</a></span></strong></span></span>
+                </p>
+                <div style="text-align: justify;"><span style="font-size: 18px;"><span
+                      style="font-family: arial,helvetica,sans-serif;"><span style="color: rgb(0, 0, 0);"><strong>Lễ ký
+                          kết độc quyền thương hiệu Silestone, Dekton giữa Eurostone và&nbsp;Cosentino tại Việt
+                          Nam</strong></span></span></span></div>
+                <div style="text-align: justify;">&nbsp;</div>
+                <div style="text-align: center;"><iframe loading="lazy" allowfullscreen="allowfullscreen"
+                    frameborder="0" height="315" src="https://www.youtube.com/embed/Slirgjr66bk"
+                    title="YouTube video player" width="560"></iframe></div>
+                <p><span style="font-size: 18px;"><span style="font-family: arial,helvetica,sans-serif;"><strong>Tại sao
+                        nên chọn Dekton – đá nhân tạo cao cấp “số 1” thế giới?</strong></span></span><br>&nbsp;</p>
+                <div style="text-align: center;"><iframe loading="lazy" allowfullscreen="allowfullscreen"
+                    frameborder="0" height="315" src="https://www.youtube.com/embed/m9-TPNdJx3E"
+                    title="YouTube video player" width="560"></iframe></div>
+                <div style="text-align: justify;"><span style="font-size: 18px;"><span
+                      style="font-family: arial,helvetica,sans-serif;"><strong>Các chứng chỉ quốc tế mà Dekton đạt
+                        được</strong></span></span></div>
+                <div style="text-align: center;">
+                  <div style="text-align: justify;">&nbsp;</div>
+                </div>
+                <div style="text-align: center;"><span style="font-size: 16px;"><span
+                      style="font-family: arial,helvetica,sans-serif;"><iframe loading="lazy" height="480"
+                        src="https://drive.google.com/file/d/1i57NRkHEk3O8x6zUjALjUkRIzT1uLx0O/preview"
+                        width="640"></iframe></span></span></div>
+                <p>&nbsp;</p>
+                <div style="text-align: justify;">
+                  <div style="text-align:center"><img loading="lazy" decoding="async" alt="greenguard" height="462"
+                      src="https://stone.nttung.dev/wp-content/uploads/2024/01/greenguard-84.jpg" width="640"
+                      title="greenguard-84"></div>
+                  <p>&nbsp;</p>
+                  <div style="text-align:center"><img loading="lazy" decoding="async" alt="eu declaration" height="631"
+                      src="https://stone.nttung.dev/wp-content/uploads/2024/01/eu_declaration-83.jpg" width="437"
+                      title="eu_declaration-83"></div>
+                  <p>&nbsp;</p>
+                  <div style="text-align:center"><img loading="lazy" decoding="async" alt="uv" height="620"
+                      src="https://stone.nttung.dev/wp-content/uploads/2024/01/uv-83.jpg" width="437" title="uv-83">
+                  </div>
+                  <p><span style="font-size:16px;"><span style="font-family:arial,helvetica,sans-serif;">Ngoài ra, đá
+                        Dekton còn rất nhiều các chứng chỉ khác đáp ứng tiêu chuẩn chất lượng cao, đảm bảo an toàn cho
+                        người sử dụng và môi trường xung quanh. Liên hệ với Eurostone – Đơn vị tư vấn, thiết kế, thi
+                        công phân phối đá Dekton, Silestone tại Việt Nam qua hotline hoặc zalo <span
+                          style="color:rgb(255, 0, 0);"><strong>0903 930 126</strong></span> để được tư vấn, cung cấp
+                        đầy đủ các chứng chỉ.&nbsp;</span></span></p>
+                  <div style="text-align: justify;">&nbsp;</div>
+                  <div></div>
+                </div>
+              </div>
+              <p></p>
+            </div>
+          </div>
+          <div class="viewmore_btn"> <span>XEM THÊM</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="detail_box03">
+      <div class="bg-wave"></div>
+      <div class="inner">
+        <h3 class="c-title02">Sản Phẩm Tương Tự</h3>
+        <ul class="c-slider01 slider01">
+          <li class="items"><a href="#">
+              <figure><img src="assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)"></figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a></li>
+          <li class="items"><a href="#">
+              <figure><img src="assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)"></figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cmf</li>
+                </ul>
+              </div>
+            </a></li>
+          <li class="items"><a href="#">
+              <figure><img src="assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)"></figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a></li>
+          <li class="items"><a href="#">
+              <figure><img src="assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)"></figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a></li>
+          <li class="items"><a href="#">
+              <figure><img src="assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)"></figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a></li>
+          <li class="items"><a href="#">
+              <figure><img src="assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)"></figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="detail_box04">
+      <div class="inner">
+        <div class="block">
+          <h3 class="c-title03">Bồn rửa chén</h3>
+          <ul class="detail_list01">
+            <li> <a href="#">
+                <figure><img src="assets/images/detail/products_img01.png" alt="Đối xứng"></figure>
+                <p>Đối xứng</p>
+              </a></li>
+            <li> <a href="#">
+                <figure> <img src="assets/images/detail/products_img02.png" alt="Cân bằng"></figure>
+                <p>Cân bằng</p>
+              </a></li>
+            <li> <a href="#">
+                <figure> <img src="assets/images/detail/products_img03.png" alt="Phản chiếu"></figure>
+                <p>Phản chiếu</p>
+              </a></li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3 class="c-title03">Bồn rửa chén</h3>
+          <ul class="detail_list01">
+            <li> <a href="#">
+                <figure><img src="assets/images/detail/products_img04.png" alt="Bubble"></figure>
+                <p>Bubble</p>
+              </a></li>
+            <li> <a href="#">
+                <figure> <img src="assets/images/detail/products_img05.png" alt="Exelis"></figure>
+                <p>Exelis</p>
+              </a></li>
+            <li> <a href="#">
+                <figure> <img src="assets/images/detail/products_img06.png" alt="Freccia"></figure>
+                <p>Freccia</p>
+              </a></li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3 class="c-title03">Bồn rửa chén</h3>
+          <ul class="detail_list01 detail_list01--01">
+            <li> <a href="#">
+                <figure> <img src="assets/images/detail/cornor_img01.png" alt="Căn bản"></figure>
+                <p>Căn bản</p>
+              </a></li>
+            <li> <a href="#">
+                <figure> <img src="assets/images/detail/cornor_img02.png" alt="Bán gờ tròn"></figure>
+                <p>Bán gờ tròn</p>
+              </a></li>
+            <li> <a href="#">
+                <figure> <img src="assets/images/detail/cornor_img03.png" alt="Thác nước / Góc tròn"></figure>
+                <p>Thác nước / Góc tròn</p>
+              </a></li>
+            <li> <a href="#">
+                <figure> <img src="assets/images/detail/cornor_img01.png" alt="Bậc bán gờ tròn"></figure>
+                <p>Bậc bán gờ tròn</p>
+              </a></li>
+            <li> <a href="#">
+                <figure> <img src="assets/images/detail/cornor_img05.png" alt="Vát cạnh"></figure>
+                <p>Vát cạnh</p>
+              </a></li>
+            <li> <a href="#">
+                <figure> <img src="assets/images/detail/cornor_img06.png" alt="Gờ tròn"></figure>
+                <p>Gờ tròn </p>
+              </a></li>
+            <li> <a href="#">
+                <figure> <img src="assets/images/detail/cornor_img07.png" alt="Hình cung nhọn"></figure>
+                <p>Hình cung nhọn</p>
+              </a></li>
+            <li> <a href="#">
+                <figure> <img src="assets/images/detail/cornor_img08.png" alt="Đỉnh tròn"></figure>
+                <p>Đỉnh tròn</p>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="detail_box05">
+      <div class="inner">
+        <div class="m-block04">
+          <h3 class="c-title02 c-title02--01">Tính Năng Ưu Việt</h3>
+          <p class="txt01">Hơn 130 lựa chọn màu sắc thỏa mãn mọi nhu cầu của bạn</p>
+          <p class="txt02">Với các tính năng và màu sắc đa dạng phong phú, sản phẩm đá DEKTON thích hợp với mọi ứng dụng
+            nội thất cho căn nhà của bạn</p>
+          <ul class="list-3cols">
+            <li> <a href="#">
+                <figure> <img src="assets/images/dekton/fea_img01.jpg" alt="GIẢ LẬP KHÔNG GIAN"></figure>
+                <div class="sec">
+                  <h4 class="ttl">GIẢ LẬP KHÔNG GIAN</h4>
+                  <p class="txt">Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà
+                    bạn thích.</p>
+                  <p class="link">Thiết kế ngay </p>
+                </div>
+              </a></li>
+            <li> <a href="#">
+                <figure> <img src="assets/images/dekton/fea_img01.jpg" alt="GIẢ LẬP KHÔNG GIAN"></figure>
+                <div class="sec">
+                  <h4 class="ttl">GIẢ LẬP KHÔNG GIAN</h4>
+                  <p class="txt">Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà
+                    bạn thích.</p>
+                  <p class="link">Thiết kế ngay </p>
+                </div>
+              </a></li>
+            <li> <a href="#">
+                <figure> <img src="assets/images/dekton/fea_img01.jpg" alt="GIẢ LẬP KHÔNG GIAN"></figure>
+                <div class="sec">
+                  <h4 class="ttl">GIẢ LẬP KHÔNG GIAN</h4>
+                  <p class="txt">Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà
+                    bạn thích.</p>
+                  <p class="link">Thiết kế ngay </p>
+                </div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+      <figure class="illust illust04"><img src="assets/images/illust04.svg" alt="illust"></figure>
+    </section>
+  </main>
+  <footer class="c-footer">
+    <div class="inner">
+      <div class="footer__cont">
+        <div class="footer__block">
+          <div class="footer__frame">
+            <div class="f_ttl">THÔNG TIN CÔNG TY</div>
+            <div class="f_txt01">CÔNG TY CỔ PHẦN ĐÁ HOA CƯƠNG CHÂU ÂU - EUROSTONE</div>
+            <ul class="f_list">
+              <li>MST: 0309720941</li>
+              <li>Người đại diện: Text Text Text</li>
+              <li>Ngày cấp: Text Text Text</li>
+              <li>Nơi cấp: Text Text Text</li>
+            </ul>
+          </div>
+          <div class="footer__frame">
+            <div class="f_ttl">KẾT NỐI VỚI EUROSTONE</div>
+            <ul class="list-social">
+              <li> <a href="#" target="_blank"><img src="assets/images/facebook.png" alt="facebook" width="30"></a></li>
+              <li> <a href="#"><img src="assets/images/pinterest.png" alt="pinterest" width="30"></a></li>
+              <li> <a href="#" target="_blank"><img src="assets/images/youtube.png" alt="youtube" width="30"></a></li>
+              <li> <a href="#" target="_blank"><img src="assets/images/zalo.png" alt="zalo" width="30"></a></li>
+              <li> <a href="#" target="_blank"><img src="assets/images/messenger.png" alt="messenger" width="30"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__block">
+          <div class="footer__frame">
+            <div class="f_ttl">VỀ EUROSTONE</div>
+            <p class="f_txt02 icon01">Showroom</p>
+            <ul class="f_list">
+              <li>số 120 đường số 7, KDC Cityland - Center Hill, P.7, Q. Gò Vấp</li>
+              <li>số 25 đường số 10, KĐT Sala, P. An Lợi Đông, Q.2, TP. Thủ Đức</li>
+            </ul>
+            <p class="f_txt02 icon02">Nhà máy</p>
+            <ul class="f_list">
+              <li>số 120 đường số 7, KDC Cityland - Center Hill, P.7, Q. Gò Vấp</li>
+              <li>số 25 đường số 10, KĐT Sala, P. An Lợi Đông, Q.2, TP. Thủ Đức</li>
+            </ul>
+            <p class="f_txt02 phone">Hotline : <a href="tel:0903930126">0903 930 126</a><a href="tel:0903598407">0903
+                598 407</a></p>
+            <p class="f_txt02 mail">Email : <a href="mailto:info@eurostone.vn">info@eurostone.vn</a></p>
+          </div>
+        </div>
+        <div class="footer__block">
+          <div class="footer__frame">
+            <p class="f_ttl">CHÍNH SÁCH CHUNG</p>
+            <ul class="f_list">
+              <li> <a href="#">Chính sách vận chuyển</a></li>
+              <li> <a href="#">Chính sách thi công</a></li>
+              <li> <a href="#">Chính sách bảo hành</a></li>
+            </ul>
+          </div>
+          <div class="footer__contact">
+            <p>Đăng ký Email ngay để nhận ưu đãi mới nhất!</p>
+            <div class="register">
+              <p class="cus_input">
+                <input type="text" placeholder="Nhập Email">
+              </p>
+              <p class="btn_submit">
+                <input type="submit" value="">
+              </p>
+            </div>
+            <p class="f_logo"> <img src="assets/images/f_logo.png" alt="facebook" width="137"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <address>&copy;2016 EuroStone All Rights Reserved.</address>
+  </footer>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/jquery.matchHeight.js"></script>
+  <script src="assets/js/top.js"></script>
+</body>
+
 </html>
