@@ -2470,6 +2470,15 @@ viewmore_ #detail_box02 .reference_block .reference_cont h3 {
   transform: translateY(-50%) rotate(180deg);
   transition: all 0.3s ease;
 }
+#detail_box02 .detail_block .viewmore_btn .txt02 {
+  display: none;
+}
+#detail_box02 .detail_block .viewmore_btn.active .txt01 {
+  display: none;
+}
+#detail_box02 .detail_block .viewmore_btn.active .txt02 {
+  display: block;
+}
 @media screen and (max-width: 1024px) {
   #detail_box02 {
     padding: 50px 0 9.766vw;
